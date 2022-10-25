@@ -139,7 +139,7 @@ html, body{
 
 
 .nebulaone{
-
+  height: 140vh;
   background: radial-gradient(circle, rgb(255, 84, 238) 0%, rgba(231,83,117,1) 50%, rgba(137,78,154,1) 74%, rgba(69,22,116,1) 84%, rgb(15, 0, 65) 92%);
   opacity: 0;
   position: absolute;
@@ -159,7 +159,7 @@ html, body{
 }
 
 .nebulatwo{
-
+  height: 140vh;
   background: linear-gradient(135deg, rgba(13, 194, 255, 0.7) 0%, rgba(231,83,117,0.5) 50%, rgb(7, 28, 66) 74%, rgba(69,22,116,0.8) 84%, rgba(5, 1, 115, 0.7) 92%);
   opacity: 0;
   position: absolute;
@@ -179,7 +179,7 @@ html, body{
 }
 
 .nebulathree{
-
+  height: 140vh;
   background: linear-gradient(286deg, rgba(47, 8, 199, 0.6) 0%, rgba(22, 17, 65, 0.8) 50%, rgba(137,78,154,0.6) 74%, rgba(69,22,116,0.9) 84%, rgba(11, 0, 97, 0.8) 92%);
   opacity: 0;
   position: absolute;
@@ -199,7 +199,7 @@ html, body{
 }
 
 .nebulafour{
-
+  height: 140vh;
   background: linear-gradient(240deg, rgba(64, 0, 191, 0.6) 10%, rgba(52,6,17,1) 24%, rgba(42, 15, 97, 0.8) 59%, rgba(137,78,154,0.8) 74%, rgba(69,22,116,0.8) 84%);
   opacity: 0;
   position: absolute;
@@ -661,8 +661,8 @@ html, body{
 }
 
 .splotchnineteen{
-  width: calc((100vh + 100vw) / 6 );
-  height: calc((100vh + 100vw) / 6 );
+  width: calc((100vh + 100vw) / 9 );
+  height: calc((100vh + 100vw) / 9 );
   overflow: hidden;
   background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.3) 60%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
   opacity: 0;
@@ -704,6 +704,202 @@ html, body{
   100% {opacity: 0.8;}
 }
 
+.splotchtwentyone{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(23, 1, 54, 0.778) 60%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:96vh;
+  right:0px;
+  bottom:0px;
+  left:20vw;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+
+.splotchtwentytwo{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 60%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:100vh;
+  right:0px;
+  bottom:0px;
+  left:25vw;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+
+.splotchtwentythree{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 60%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:110vh;
+  right:0px;
+  bottom:0px;
+  left:30vw;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+
+.splotchtwentyfour{
+  width: calc((100vh + 100vw) / 6 );
+  height: calc((100vh + 100vw) / 6 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,1) 0%, rgba(35,8,72,0.9) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:95vh;
+  right:0px;
+  bottom:0px;
+  left:27vw;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+
+.splotchtwentyfive{
+  width: calc((100vh + 100vw) / 6 );
+  height: calc((100vh + 100vw) / 6 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 60%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:10vh;
+  right:0px;
+  bottom:0px;
+  left:30vw;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+
+.splotchtwentysix{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 60%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:-20vh;
+  right:0px;
+  bottom:0px;
+  left:50vw;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+
+.splotchtwentyseven{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.8) 0%, rgba(35,8,72,0.6) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:80vh;
+  right:0px;
+  bottom:0px;
+  left:10vw;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+.splotchtwentyeight{
+  width: calc((100vh + 100vw) / 7 );
+  height: calc((100vh + 100vw) / 7 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.7) 0%, rgba(35,8,72,0.5) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:128vh;
+  right:0px;
+  bottom:0px;
+  left:39vw;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+
+.splotchtwentynine{
+  width: calc((100vh + 100vw) / 8 );
+  height: calc((100vh + 100vw) / 8 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.8) 0%, rgba(35,8,72,0.6) 60%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:123vh;
+  right:0px;
+  bottom:0px;
+  left:44vw;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
 
 //bright ones after this________________________________________________________________________
 
@@ -799,7 +995,7 @@ html, body{
   width: calc((100vh + 100vw) / 18 );
   height: calc((100vh + 100vw) / 18 );
   overflow: hidden;
-  background: radial-gradient(circle, rgba(112, 47, 104, 0.5) 0%, rgba(112, 47, 104, 0.2) 40%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  background: radial-gradient(circle, rgba(112, 47, 104, 0.3) 0%, rgba(112, 47, 104, 0.1) 40%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
   opacity: 0;
   position: absolute;
   top:60vh;
@@ -1016,6 +1212,52 @@ html, body{
 @keyframes nonechange {
   0% {opacity: 0;}
   100% {opacity: 0.8;}
+}
+
+
+
+.skyland{
+  width: 100vw;
+  height: 140vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(23,0,74,0.7) 0%, rgba(37,0,99,0.4) 14%, rgba(56,0,124,0) 40%,rgba(255, 0, 179, 0.3) 80%, rgba(255, 0, 102, 0.5) 95%, rgba(255, 0, 30, 0.6) 100%);
+  opacity: 0;
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.land{
+  width: 100vw;
+  height: calc((200vh + 200vw) );
+  overflow: hidden;
+  background: black;
+  opacity: 0;
+  position: absolute;
+  top:140vh;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  animation-name: nonechange;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nonechange {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 
