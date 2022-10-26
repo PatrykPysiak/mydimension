@@ -1222,6 +1222,8 @@ html, body{
   right: 29px;
   bottom: -368px;
   left: 558px;
+  opacity: 0;
+  animation: nonechangeone 3s ease-in 8.4s forwards;
 }
 .starsbelownebulatwo{
   position: absolute;
@@ -1230,77 +1232,65 @@ html, body{
   right: 29px;
   bottom: 604px;
   left: 306px;
+  opacity: 0;
+  animation: nonechangeone 2s ease-in 8.2s forwards;
 }
+
+.starsabovenebula{
+  opacity: 0;
+  animation: nonechangeone 4s ease-in 8s forwards;
+}
+
 
 .starbox{
   width: 100vw;
   height: 140vh;
   overflow: hidden;
-  opacity: 0;
   position: absolute;
   top:0px;
   right:0px;
   bottom:0px;
   left:0px;
-  animation-name: nonechangeone;
-  animation-delay: 9s;
-  animation-duration: 4s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards
+  animation: shine 3s ease-in-out 10.9s infinite;
 }
 
 .starboxtwo{
   width: 100vw;
   height: 140vh;
   overflow: hidden;
-  opacity: 0;
   position: absolute;
   top: -266px;
   right: 0px;
   bottom: 0px;
   left: -353px;
   transform: rotate(0.01turn);
-  animation-name: nonechangeeight;
-  animation-delay: 9.3s;
-  animation-duration: 4s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards
+  animation: shine 3s ease-in-out 10.2s infinite;
 }
 
 .starboxthree{
   width: 70vw;
   height: 84vh;
   overflow: hidden;
-  opacity: 0;
   position: absolute;
   top: -269px;
   right: 0px;
   bottom: 0px;
   left: 285px;
   transform: rotate(0.25turn);
-  animation-name: nonechangeone;
-  animation-delay: 8.4s;
-  animation-duration: 4s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards
+  animation: shine 3s ease-in-out 9.6s infinite;
 }
 
 .starboxfour{
   width: 70vw;
   height: 84vh;
   overflow: hidden;
-  opacity: 0;
   position: absolute;
   top: 207px;
   right: 0px;
   bottom: 0px;
   left: -15px;
   transform: rotate(0.5turn);
-  animation-name: nonechangeeight;
-  animation-delay: 7.8s;
-  animation-duration: 4s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards
+  animation: shine 3s ease-in-out 9s infinite;
 }
 
 .starcluster{
@@ -1438,8 +1428,7 @@ html, body{
   left: 46%;
   background: rgba(255, 255, 255, 0.82);
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.728),0 0 5px rgba(255, 255, 255, 0.884);
-  animation:shine 3s ease-in-out infinite;
-  animation-delay: 0.4s;
+
 }
 .star:nth-child(2){
   top: 13%;
@@ -1452,7 +1441,7 @@ html, body{
   left: 74%;
   background: rgb(253, 205, 205);
   box-shadow: 0 0 2px rgb(255, 255, 255);
-  animation:shine 3s ease-in-out infinite;
+
 }
 .star:nth-child(4){
   top: 59%;
@@ -1471,8 +1460,7 @@ html, body{
   left: 43%;
   background: rgb(148, 255, 255);
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.753),0 0 4px rgba(255, 255, 255, 0.753);
-  animation:shine 3s ease-in-out infinite;
-  animation-delay: 2.1s;
+
 }
 .star:nth-child(7){
   top: 59%;
@@ -1485,16 +1473,14 @@ html, body{
   left: 86%;
   background: rgb(255, 233, 152);
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.836);
-  animation:shine 3s ease-in-out infinite;
-  animation-delay: 1.1s;
+
 }
 .star:nth-child(9){
   top: 50%;
   left: 03%;
   background: white;
   box-shadow: 0 0 4px rgb(255, 255, 255);
-  animation:shine 3s ease-in-out infinite;
-  animation-delay: 0.4s;
+
 }
 .star:nth-child(10){
   top: 33%;
@@ -1519,8 +1505,7 @@ html, body{
   left: 9%;
   background: rgb(255, 213, 213);
   box-shadow: 0 0 4px rgb(255, 255, 255),0 0 8px rgb(255, 255, 255);
-  animation:shine 3s ease-in-out infinite;
-  animation-delay: 2.6s;
+
 }
 .star:nth-child(14){
   top: 66%;
@@ -1545,8 +1530,7 @@ html, body{
   left: 26%;
   background: rgb(255, 233, 200);
   box-shadow: 0 0 1px rgb(255, 255, 255);
-  animation:shine 3s ease-in-out infinite;
-  animation-delay: 2.3s;
+
 }
 .star:nth-child(18){
   top: 27%;
@@ -1559,8 +1543,7 @@ html, body{
   left: 68px;
   background: rgb(254, 182, 255);
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.82);
-  animation:shine 3s ease-in-out infinite;
-  animation-delay: 1.7s;
+
 }
 .star:nth-child(20){
   top: 78%;
