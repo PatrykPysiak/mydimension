@@ -44,7 +44,7 @@ html, body{
   background: linear-gradient(45deg, rgb(0, 234, 246),rgb(2, 205, 219),rgb(33, 139, 146),rgb(5, 42, 75), rgb(0, 0, 0));
   background-clip: text;
   background-size: 1000%;
-  font-size: calc((10vh + 10vw) / 3);
+  font-size: calc((10vh + 10vw) / 3.2);
   background-repeat: no-repeat;
   animation-name: titlechange, titleshadowchange;
   animation-duration: 7s;
@@ -137,7 +137,7 @@ html, body{
   left:0px;
 }
 
-
+//___background hue tones for the nebula below this line_______________________________
 
 .nebulaone{
   height: 140vh;
@@ -216,7 +216,7 @@ html, body{
   100% {opacity: 0.4;}
 }
 
-
+//___below are main tones for flow of the nebula________________________________
 
 .skyone{
   width: calc((100vh + 100vw) );
@@ -255,7 +255,7 @@ html, body{
   animation-fill-mode: forwards
 }
 
-
+//__here the dark core of the nebula starts_________________________________________
 
 .splotchone{
   width: calc((100vh + 100vw) / 5 );
@@ -1214,6 +1214,7 @@ html, body{
 
 //_here be done with nebula____________________________________________________________________
 
+//___implementation of stars below_______________________________________________________
 
 .starsbelownebulaone{
   position: absolute;
@@ -1546,50 +1547,68 @@ html, body{
   background: rgba(255, 255, 255, 0.8);
 }
 
+
+//___shooting stars below______________________________________________________________________
+
 .shootingstarbox{
-  width: 100vw;
+  width: 200vw;
   height: 140vh;
   overflow: hidden;
-  opacity: 0;
   position: absolute;
-  top:0px;
+  top:-30vh;
   right:0px;
   bottom:0px;
-  left:0px;
-  animation-name: nonechangeone;
-  animation-delay: 5s;
-  animation-duration: 4s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards
+  left:-30vw;
+  transform: rotateZ(-35deg);
+  opacity: 0;
+  animation: nonechangeone 4s ease-in 8s forwards;
 }
+
+
 .shootingstar{
   position: absolute;
-  height: 1px;
-  width: 1px;
+  height: 2px;
+  background: linear-gradient(90deg,rgba(255, 196, 147, 0.292) 0%,rgba(255, 255, 255, 0) 100%);
+  animation: fall 20s ease-out 0.5s infinite;
 }
+
+.shootingstar::before,
+.shootingstar::after{
+  content: "";
+}
+
+
 .shootingstar:nth-child(1){
-  top: 30%;
-  left: 46%;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 0 2px rgb(255, 255, 255),0 0 5px rgba(255, 255, 255, 0.884);
+  top: 40%;
+  left: 80%;
+  animation-delay: 4s;
 }
 .shootingstar:nth-child(2){
   top: 13%;
   left: 51%;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 0 2px rgb(255, 255, 255),0 0 5px rgba(255, 255, 255, 0.884);
+  animation-delay: 8s;
 }
 .shootingstar:nth-child(3){
   top: 66%;
-  left: 74%;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 0 2px rgb(255, 255, 255),0 0 5px rgba(255, 255, 255, 0.884);
+  left: 64%;
+  animation-delay: 16s;
 }
 .shootingstar:nth-child(4){
   top: 59%;
-  left: 22%;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 0 2px rgb(255, 255, 255),0 0 5px rgba(255, 255, 255, 0.884);
+  left: 70%;
+  animation-delay: 32s;
+}
+.shootingstar:nth-child(1)::after{
+
+}
+.shootingstar:nth-child(2)::after{
+
+}
+.shootingstar:nth-child(3)::after{
+
+}
+.shootingstar:nth-child(4)::after{
+
 }
 
 
@@ -1683,8 +1702,24 @@ html, body{
   100% {opacity: 1;}
 }
 
-@keyframes fade{
-  0% {opacity: 0;}
-  50% {opacity: 0.9;}
-  100% {opacity: 0;}
+@keyframes fall{
+  0% {
+    opacity: 0;
+    width: 0px;
+    transform: translateX(0);
+  }
+  3% {
+    opacity: 1;
+    width: 400px;
+
+  }
+  6% {
+    opacity: 0;
+    width: 0px;
+    transform: translateX(-1300px);
+  }
+  100%{
+    opacity: 0;
+    width: 0px;
+  }
 }
