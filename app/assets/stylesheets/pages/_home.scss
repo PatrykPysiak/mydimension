@@ -47,7 +47,7 @@ html, body{
   font-size: calc((10vh + 10vw) / 3);
   background-repeat: no-repeat;
   animation-name: titlechange, titleshadowchange;
-  animation-duration: 5s;
+  animation-duration: 7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards
 }
@@ -60,9 +60,9 @@ html, body{
 }
 @keyframes titleshadowchange {
   0% {text-shadow: 0px 0px 5px rgb(0, 0, 0);}
-  50% {text-shadow: 0px 0px 5px rgb(0, 0, 0);}
-  80% {text-shadow: 0px 0px 5px rgba(10, 251, 255, 0.4);}
-  90% {text-shadow: 0px 0px 5px rgba(22, 251, 255, 0.6);}
+  70% {text-shadow: 0px 0px 5px rgb(0, 0, 0);}
+  88% {text-shadow: 0px 0px 5px rgba(10, 251, 255, 0.4);}
+  93% {text-shadow: 0px 0px 5px rgba(22, 251, 255, 0.6);}
   100% {text-shadow: 0px 0px 5px rgba(11, 255, 255, 0.4);}
 }
 
@@ -80,8 +80,8 @@ html, body{
   font-size: calc((10vh + 10vw) / 2);
   background-repeat: no-repeat;
   animation-name: dotchange, dotshadowchange ;
-  animation-delay: 2s;
-  animation-duration: 2.7s;
+  animation-delay: 4s;
+  animation-duration: 2.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both
 }
@@ -109,7 +109,7 @@ html, body{
   background-image: radial-gradient(circle, rgb(249, 254, 255) 0%, rgba(238, 55, 255, 0.739) 25%, rgba(208, 36, 255, 0) 40%, rgba(0, 0, 0, 0) 92%);
   background: cover;
   animation-name: novachange;
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-duration: 3s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -149,7 +149,7 @@ html, body{
   bottom:0px;
   left:0px;
   animation-name: nonechangeone;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -166,7 +166,7 @@ html, body{
   bottom:0px;
   left:0px;
   animation-name: ntwochange;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 3s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -186,7 +186,7 @@ html, body{
   bottom:0px;
   left:0px;
   animation-name: nthreechange;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -206,7 +206,7 @@ html, body{
   bottom:0px;
   left:0px;
   animation-name: nfourchange;
-  animation-delay: 6s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -230,7 +230,7 @@ html, body{
   bottom:0px;
   left:30vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -249,7 +249,7 @@ html, body{
   bottom:0px;
   left:-10vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -269,7 +269,7 @@ html, body{
   bottom:0px;
   left:15vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -288,7 +288,7 @@ html, body{
   bottom:0px;
   left:5vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -307,7 +307,7 @@ html, body{
   bottom:0px;
   left:10vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -326,7 +326,7 @@ html, body{
   bottom:0px;
   left:20vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -345,7 +345,7 @@ html, body{
   bottom:0px;
   left:30vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -364,7 +364,7 @@ html, body{
   bottom:0px;
   left:50vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -383,7 +383,7 @@ html, body{
   bottom:0px;
   left:10vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -401,7 +401,7 @@ html, body{
   bottom:0px;
   left:20vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -420,7 +420,7 @@ html, body{
   bottom:0px;
   left:35vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -439,7 +439,7 @@ html, body{
   bottom:0px;
   left:20vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -458,7 +458,7 @@ html, body{
   bottom:0px;
   left:40vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -477,7 +477,7 @@ html, body{
   bottom:0px;
   left:40vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -496,7 +496,7 @@ html, body{
   bottom:0px;
   left:55vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -515,7 +515,7 @@ html, body{
   bottom:0px;
   left:5vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -534,7 +534,7 @@ html, body{
   bottom:0px;
   left:50vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -553,7 +553,7 @@ html, body{
   bottom:0px;
   left:10vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -572,7 +572,7 @@ html, body{
   bottom:0px;
   left:40vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -591,7 +591,7 @@ html, body{
   bottom:0px;
   left:10vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -610,7 +610,7 @@ html, body{
   bottom:0px;
   left:10vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -629,7 +629,7 @@ html, body{
   bottom:0px;
   left:35vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -648,7 +648,7 @@ html, body{
   bottom:0px;
   left:20vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -667,7 +667,7 @@ html, body{
   bottom:0px;
   left:25vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -686,7 +686,7 @@ html, body{
   bottom:0px;
   left:30vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -704,7 +704,7 @@ html, body{
   bottom:0px;
   left:27vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -723,7 +723,7 @@ html, body{
   bottom:0px;
   left:30vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -742,7 +742,7 @@ html, body{
   bottom:0px;
   left:50vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -761,7 +761,7 @@ html, body{
   bottom:0px;
   left:10vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -779,7 +779,7 @@ html, body{
   bottom:0px;
   left:39vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -798,7 +798,7 @@ html, body{
   bottom:0px;
   left:44vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -819,7 +819,7 @@ html, body{
   bottom:0px;
   left:50vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -838,7 +838,7 @@ html, body{
   bottom:0px;
   left:17vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -857,7 +857,7 @@ html, body{
   bottom: 0px;
   left: 46vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -876,7 +876,7 @@ html, body{
   bottom:0px;
   left:35vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -895,7 +895,7 @@ html, body{
   bottom:0px;
   left:5vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -914,7 +914,7 @@ html, body{
   bottom: 0px;
   left: 47vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -933,7 +933,7 @@ html, body{
   bottom: 0px;
   left: 50vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -955,7 +955,7 @@ html, body{
   bottom:0px;
   left:48vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -974,7 +974,7 @@ html, body{
   bottom:0px;
   left:15vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -993,7 +993,7 @@ html, body{
   bottom:0px;
   left:46vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1012,7 +1012,7 @@ html, body{
   bottom:0px;
   left:30vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1031,7 +1031,7 @@ html, body{
   bottom: 0px;
   left: 5vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1050,7 +1050,7 @@ html, body{
   bottom:0px;
   left:42vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1069,7 +1069,7 @@ html, body{
   bottom:0px;
   left:42vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1088,7 +1088,7 @@ html, body{
   bottom:0px;
   left:48vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1107,7 +1107,7 @@ html, body{
   bottom:0px;
   left:15vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1126,7 +1126,7 @@ html, body{
   bottom: 0px;
   left: 31vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1145,7 +1145,7 @@ html, body{
   bottom: 0px;
   left: 27vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1164,7 +1164,7 @@ html, body{
   bottom: 0px;
   left: 10vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1183,7 +1183,7 @@ html, body{
   bottom:0px;
   left:40vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 7s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1202,7 +1202,7 @@ html, body{
   bottom:0px;
   left:42vw;
   animation-name: nonechangeeight;
-  animation-delay: 6.3s;
+  animation-delay: 8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1243,7 +1243,7 @@ html, body{
   bottom:0px;
   left:0px;
   animation-name: nonechangeone;
-  animation-delay: 5s;
+  animation-delay: 10s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1261,7 +1261,7 @@ html, body{
   left: -353px;
   transform: rotate(0.01turn);
   animation-name: nonechangeeight;
-  animation-delay: 6.3s;
+  animation-delay: 10.3s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1279,7 +1279,7 @@ html, body{
   left: 285px;
   transform: rotate(0.25turn);
   animation-name: nonechangeone;
-  animation-delay: 6.3s;
+  animation-delay: 10.4s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1297,7 +1297,7 @@ html, body{
   left: -15px;
   transform: rotate(0.5turn);
   animation-name: nonechangeeight;
-  animation-delay: 6.3s;
+  animation-delay: 9.8s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
