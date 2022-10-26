@@ -70,6 +70,7 @@ html, body{
   z-index: 10;
   padding-left: 5px;
   padding-bottom: 8px;
+  padding-right: 5px;
   font-family: 'Permanent Marker', cursive;
   color: transparent;
   background: linear-gradient(180deg, rgb(213, 0, 246),rgb(205, 2, 219),rgb(140, 33, 146),rgb(43, 5, 75), rgb(0, 0, 0));
@@ -1574,7 +1575,7 @@ html, body{
   bottom:0px;
   left:0px;
   padding: 20vw;
-  text-shadow: 0px 0px 5px rgb(31, 0, 63);
+  text-shadow: 0px 0px 5px #00f3ff, 0px 0px 20px #1f003f;
   animation-name: thankschange;
   animation-delay: 7s;
   animation-duration: 4s;
