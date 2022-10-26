@@ -1251,7 +1251,7 @@ html, body{
   right:0px;
   bottom:0px;
   left:0px;
-  animation: shine 3s ease-in-out 10.9s infinite;
+  animation: shine 3.5s ease-in-out 11.9s infinite;
 }
 
 .starboxtwo{
@@ -1264,7 +1264,7 @@ html, body{
   bottom: 0px;
   left: -353px;
   transform: rotate(0.01turn);
-  animation: shine 3s ease-in-out 10.2s infinite;
+  animation: shine 3s ease-in-out 10.7s infinite;
 }
 
 .starboxthree{
@@ -1277,7 +1277,7 @@ html, body{
   bottom: 0px;
   left: 285px;
   transform: rotate(0.25turn);
-  animation: shine 3s ease-in-out 9.6s infinite;
+  animation: shine 4s ease-in-out 9.6s infinite;
 }
 
 .starboxfour{
@@ -1290,8 +1290,9 @@ html, body{
   bottom: 0px;
   left: -15px;
   transform: rotate(0.5turn);
-  animation: shine 3s ease-in-out 9s infinite;
+  animation: shine 5s ease-in-out 9s infinite;
 }
+
 
 .starcluster{
   position: absolute;
@@ -1447,13 +1448,11 @@ html, body{
   top: 59%;
   left: 22%;
   background: white;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
 }
 .star:nth-child(5){
   top: 56%;
   left: 74%;
-  background: white;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.838);
 }
 .star:nth-child(6){
   top: 10%;
@@ -1466,7 +1465,6 @@ html, body{
   top: 59%;
   left: 67%;
   background: rgba(255, 255, 255, 0.79);
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
 }
 .star:nth-child(8){
   top: 74%;
@@ -1485,8 +1483,7 @@ html, body{
 .star:nth-child(10){
   top: 33%;
   left: 20%;
-  background: white;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.893);
 }
 .star:nth-child(11){
   top: 44%;
@@ -1510,14 +1507,12 @@ html, body{
 .star:nth-child(14){
   top: 66%;
   left: 22%;
-  background: white;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.884);
 }
 .star:nth-child(15){
   top: 30%;
   left: 23%;
   background: rgba(255, 255, 255, 0.751);
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
 }
 .star:nth-child(16){
   top: 24%;
@@ -1548,13 +1543,7 @@ html, body{
 .star:nth-child(20){
   top: 78%;
   left: 70%;
-  background: white;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.434);
-}
-@keyframes shine{
-  0% {opacity: 1;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .shootingstarbox{
@@ -1682,7 +1671,20 @@ html, body{
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+
 @keyframes nonechangeeight {
   0% {opacity: 0;}
   100% {opacity: 0.8;}
+}
+
+@keyframes shine{
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@keyframes fade{
+  0% {opacity: 0;}
+  50% {opacity: 0.9;}
+  100% {opacity: 0;}
 }
