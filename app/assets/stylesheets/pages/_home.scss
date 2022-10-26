@@ -1202,7 +1202,7 @@ html, body{
   bottom:0px;
   left:42vw;
   animation-name: nonechangeeight;
-  animation-delay: 5s;
+  animation-delay: 6.3s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1213,6 +1213,24 @@ html, body{
 
 
 //_here be done with nebula____________________________________________________________________
+
+
+.starsbelownebulaone{
+  position: absolute;
+  transform: rotate(0.7turn);
+  top: -570px;
+  right: 29px;
+  bottom: -368px;
+  left: 558px;
+}
+.starsbelownebulatwo{
+  position: absolute;
+  transform: rotate(0.1turn);
+  top: -200px;
+  right: 29px;
+  bottom: 604px;
+  left: 306px;
+}
 
 .starbox{
   width: 100vw;
@@ -1242,8 +1260,8 @@ html, body{
   bottom: 0px;
   left: -353px;
   transform: rotate(0.01turn);
-  animation-name: nonechangeone;
-  animation-delay: 5s;
+  animation-name: nonechangeeight;
+  animation-delay: 6.3s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1261,7 +1279,25 @@ html, body{
   left: 285px;
   transform: rotate(0.25turn);
   animation-name: nonechangeone;
-  animation-delay: 5s;
+  animation-delay: 6.3s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+.starboxfour{
+  width: 70vw;
+  height: 84vh;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 207px;
+  right: 0px;
+  bottom: 0px;
+  left: -15px;
+  transform: rotate(0.5turn);
+  animation-name: nonechangeeight;
+  animation-delay: 6.3s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1400,7 +1436,7 @@ html, body{
   top: 30%;
   left: 46%;
   background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.728);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.728),0 0 5px rgba(255, 255, 255, 0.884);
 }
 .star:nth-child(2){
   top: 13%;
@@ -1430,7 +1466,7 @@ html, body{
   top: 10%;
   left: 43%;
   background: rgb(148, 255, 255);
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.753);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.753),0 0 4px rgba(255, 255, 255, 0.753);
 }
 .star:nth-child(7){
   top: 59%;
@@ -1472,7 +1508,7 @@ html, body{
   top: 8%;
   left: 9%;
   background: rgb(255, 213, 213);
-  box-shadow: 0 0 4px rgb(255, 255, 255);
+  box-shadow: 0 0 4px rgb(255, 255, 255),0 0 8px rgb(255, 255, 255);
 }
 .star:nth-child(14){
   top: 66%;
@@ -1575,7 +1611,7 @@ html, body{
   bottom:0px;
   left:0px;
   padding: 20vw;
-  text-shadow: 0px 0px 5px #00f3ff, 0px 0px 20px #1f003f;
+  text-shadow: 0px 0px 5px #00f3ff, 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
   animation-name: thankschange;
   animation-delay: 7s;
   animation-duration: 4s;
