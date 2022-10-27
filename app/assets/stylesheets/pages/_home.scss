@@ -1637,13 +1637,13 @@ html, body{
 
 .skybox{
   flex-shrink: 0;
-  top: 20vh;
+  top: 0;
   width: 100vw;
   height: 140vh;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(23,0,74,0.7) 0%, rgba(37,0,99,0.4) 14%, rgba(85, 0, 124, 0) 40%,rgba(255, 0, 179, 0.3) 80%, rgba(215, 79, 95, 0.6) 95%, rgba(255, 195, 91, 0.7) 100%);
   opacity: 0;
-  position:relative;
+  position:absolute;
   animation-name: nonechangeone;
   animation-delay: 5s;
   animation-duration: 4s;
