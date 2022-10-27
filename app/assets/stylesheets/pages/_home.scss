@@ -157,6 +157,15 @@ html, body{
 
 //___background hue tones for the nebula below this line_______________________________
 
+.cosmicbox{
+  flex-shrink: 0;
+  top: 0;
+  width: 100vw;
+  height: 140vh;
+  overflow: hidden;
+  position: absolute;
+}
+
 .nebulaone{
   height: 140vh;
   background: radial-gradient(circle, rgb(255, 84, 238) 0%, rgba(231,83,117,1) 50%, rgba(137,78,154,1) 74%, rgba(69,22,116,1) 84%, rgb(15, 0, 65) 92%);
@@ -1699,14 +1708,7 @@ html, body{
   background: rgba(0, 0, 0, 1);
   clip-path: polygon(0 100%, 1% 93%, 4% 85%, 6% 53%, 8% 45%, 11% 51%, 16% 65%, 19% 78%, 23% 85%, 28% 83%, 29% 78%, 31% 68%, 34% 73%, 37% 88%, 40% 83%, 43% 88%, 46% 83%, 50% 80%, 53% 74%, 56% 69%, 58% 75%, 61% 76%, 65% 91%, 68% 88%, 70% 91%, 73% 89%, 78% 72%, 85% 79%, 89% 76%, 93% 84%, 96% 88%, 99% 94%, 100% 100%);
 }
-.earth{
-  z-index: 8;
-  position: absolute;
-  width: 100vw;
-  height: 500px;
-  top: 180vh;
-  background: black;
-}
+
 
 .landbox{
   flex-shrink: 0;
