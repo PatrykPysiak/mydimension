@@ -115,25 +115,16 @@ html, body{
   animation-fill-mode: forwards
 }
 @keyframes novachange {
-  0% {scale: 0%;
+  0% {scale: 0;
     opacity: 0.1;}
-  10% {scale: 0%;
+  10% {scale: 0;
     opacity: 0.3;}
-  70% {scale: 2000%;
+  70% {scale: 70;
     opacity: 1;}
-  100% {scale: 1000%;
+  100% {scale: 100;
     opacity: 0;}
 }
-@-webkit-keyframes novachange {
-  0% {scale: 0%;
-    opacity: 0.1;}
-  10% {scale: 0%;
-    opacity: 0.3;}
-  70% {scale: 2000%;
-    opacity: 1;}
-  100% {scale: 1000%;
-    opacity: 0;}
-}
+
 
 .bodycard{
   position: absolute;
