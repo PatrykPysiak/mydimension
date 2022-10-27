@@ -83,7 +83,8 @@ html, body{
   animation-delay: 4s;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: both
+  animation-fill-mode: both;
+
 }
 @keyframes dotchange {
   0% {background-position: 0px -200px;}
@@ -112,16 +113,31 @@ html, body{
   animation-delay: 5s;
   animation-duration: 3s;
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
+  -webkit-animation-name: novachange;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-duration: 3s;
+  -webkit-nimation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards
+}
+@-webkit-keyframes novachange {
+  0% {-webkit-transform: scale(0);
+    opacity: 0.1;}
+  10% {-webkit-transform: scale(0);
+    opacity: 0.3;}
+  70% {-webkit-transform: scale(70);
+    opacity: 1;}
+  100% {-webkit-transform: scale(100);
+    opacity: 0;}
 }
 @keyframes novachange {
-  0% {scale: 0;
+  0% {transform: scale(0);
     opacity: 0.1;}
-  10% {scale: 0;
+  10% {transform: scale(0);
     opacity: 0.3;}
-  70% {scale: 70;
+  70% {transform: scale(70);
     opacity: 1;}
-  100% {scale: 100;
+  100% {transform: scale(100);
     opacity: 0;}
 }
 
@@ -1587,17 +1603,17 @@ html, body{
 .shootingstar:nth-child(2){
   top: 13%;
   left: 51%;
-  animation-delay: 8s;
+  animation-delay: 6s;
 }
 .shootingstar:nth-child(3){
   top: 66%;
   left: 64%;
-  animation-delay: 16s;
+  animation-delay: 12s;
 }
 .shootingstar:nth-child(4){
   top: 59%;
   left: 70%;
-  animation-delay: 32s;
+  animation-delay: 24s;
 }
 .shootingstar:nth-child(1)::after{
 
