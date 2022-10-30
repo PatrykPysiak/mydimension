@@ -1,4 +1,6 @@
 // Specific CSS for your home-page
+
+
 html, body{
   display: flex;
   flex-direction: column;
@@ -1716,7 +1718,8 @@ html, body{
   align-items: center;
   flex-shrink: 0;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
+  padding-bottom: 20vh;
   overflow: hidden;
   background: black;
   opacity: 0;
@@ -1780,6 +1783,19 @@ html, body{
   scale: 1.0;
 }
 
+.ground{
+  height: 50vh;
+  width: 50vh;
+  background-image: radial-gradient(rgba(0,234,246,0.3), rgba(2,205,219,0.2), rgba(33,139,146,0.2), rgba(5,61,75,0.2), rgba(1,70,97,0.01) 50%);
+  position: absolute;
+  top: 40vh;
+  filter: blur(1vh);
+  transform: perspective(40vh)
+  rotatex(40deg)
+  scale(1, 0.5);
+  animation: shinetwo 5s ease-in-out 10s infinite;
+  transition: scale 1s;
+}
 
 
 .textone h1{
