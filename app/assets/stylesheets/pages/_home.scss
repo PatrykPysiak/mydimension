@@ -1757,10 +1757,13 @@ html, body{
 .landreflection{
   position: absolute;
   flex-shrink: 0;
-  width: 29vh;
-  height: 29vh;
+  width: 59vh;
+  height: 30vh;
   border-radius: 50%;
-  background-image: radial-gradient(circle at 50% 20%, rgba(60, 4, 144, 0.69), rgba(49, 2, 219, 0.3), black 62%, rgba(255, 199, 125, 0.79) 64%, rgba(135, 0, 246, 0.63) 80%), radial-gradient(circle at top, rgba(5, 0, 70, 0.5), rgba(0, 20, 87, 0.247), rgba(45, 0, 118, 0.201), rgba(0, 0, 0, 0.256));
+  background-image: radial-gradient(farthest-side at 50% 20%, rgba(60,4,144,0.69), rgba(49,2,219,0.3), black 62%, rgba(255,199,125,0.79) 64%, rgba(135,0,246,0.63) 80%),radial-gradient(circle at top, rgba(5,0,70,0.5), rgba(0,20,87,0.247), rgba(45,0,118,0.201), rgba(0,0,0,0.256));
+  transform: translateX(-15vh) translateY(-0vh);
+  animation: warp 5s ease-in-out 10s infinite;
+
 }
 .ballglow{
   position: absolute;
@@ -1875,5 +1878,23 @@ html, body{
   }
   100%{
     transform: translateY(0);
+  }
+}
+
+@keyframes warp{
+  0%{
+    width: 100vh;
+    height: 50vh;
+    transform: translateX(-34.5vh) translateY(-16vh);
+  }
+  50%{
+    width: 59vh;
+    height: 30vh;
+    transform: translateX(-15vh) translateY(-0vh);
+  }
+  100%{
+    width: 100vh;
+    height: 50vh;
+    transform: translateX(-34.5vh) translateY(-16vh);
   }
 }
