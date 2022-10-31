@@ -44,12 +44,12 @@ html, body{
   color: transparent;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: linear-gradient(45deg, rgb(0, 234, 246),rgb(2, 205, 219),rgb(33, 139, 146),rgb(5, 42, 75), rgb(0, 0, 0));
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.9),rgba(191, 251, 255, 0.8),rgba(33, 139, 146, 0.8),rgba(5, 42, 75, 0.8), rgb(0, 0, 0));
   background-clip: text;
   background-size: 1000%;
   font-size: calc((10vh + 10vw) / 3.2);
   background-repeat: no-repeat;
-  animation-name: titlechange, titleshadowchange;
+  animation-name: titlechange;
   animation-duration: 7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards
@@ -61,13 +61,7 @@ html, body{
   100% {background-size: 1000%;
   opacity: 0;}
 }
-@keyframes titleshadowchange {
-  0% {text-shadow: 0px 0px 5px rgb(0, 0, 0);}
-  70% {text-shadow: 0px 0px 5px rgb(0, 0, 0);}
-  88% {text-shadow: 0px 0px 5px rgba(10, 251, 255, 0.4);}
-  93% {text-shadow: 0px 0px 5px rgba(22, 251, 255, 0.6);}
-  100% {text-shadow: 0px 0px 5px rgba(11, 255, 255, 0.4);}
-}
+
 
 .dot {
   z-index: 10;
@@ -1739,7 +1733,7 @@ html, body{
   width: 29.3vh;
   height: 29.3vh;
   border-radius: 50%;
-  background-image: radial-gradient(rgba(0, 234, 246, 0.3), rgba(2, 205, 219, 0.2), rgba(33, 139, 146, 0.1), rgba(60, 5, 75, 0.4), rgba(1, 230, 255, 0.2)), radial-gradient(rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at bottom, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at top, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), rgba(0, 0, 0, 0.256));
+  background-image: radial-gradient(rgba(226, 0, 246, 0.3), rgba(168, 2, 219, 0.2), rgba(71, 33, 146, 0.1), rgba(60, 5, 75, 0.4), rgba(217, 1, 255, 0.2)), radial-gradient(rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at bottom, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at top, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), rgba(0, 0, 0, 0.256));
   animation: levitate 5s ease-in-out 10s infinite;
   border-bottom: 2px ridge rgba(205, 0, 246, 0.4);
   border-left: 1px ridge rgba(55, 11, 145, 0.4);
@@ -1775,25 +1769,36 @@ html, body{
   width: 90vh;
   height: 90vh;
   border-radius: 50%;
-  background-image: radial-gradient(rgba(0,234,246,0.4), rgba(2,205,219,0.3), rgba(33,139,146,0.2), rgba(5,61,75,0.2), rgba(1,70,97,0.01) 50%);
-  animation: shinetwo 5s ease-in-out 10s infinite;
+  background-image: radial-gradient(rgba(253, 116, 255, 0.4), rgba(160, 42, 223, 0.3), rgba(84, 33, 146, 0.2), rgba(21, 5, 75, 0.2), rgba(15, 1, 97, 0.01) 50%);
+  animation: shinetwo 5s ease-in-out 10s infinite,
+             levitate 5s ease-in-out 10s infinite;
   transition: scale 1s;
 }
 .ballglow:hover{
   scale: 1.0;
 }
+.ballglow:hover ~ .ground{
+  scale: (200% 100% 200%);
+}
+
+.borderballglow{
+  position: absolute;
+  flex-shrink: 0;
+  width: 41vh;
+  height: 41vh;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(253, 116, 255, 0.4), rgba(160, 42, 223, 0.3), rgba(84, 33, 146, 0.2), rgba(21, 5, 75, 0.2), rgba(144, 0, 255, 0.279) 50%, rgba(144, 0, 255, 0.01) 50%);
+}
 
 .ground{
   height: 50vh;
   width: 50vh;
-  background-image: radial-gradient(rgba(0,234,246,0.3), rgba(2,205,219,0.2), rgba(33,139,146,0.2), rgba(5,61,75,0.2), rgba(1,70,97,0.01) 50%);
+  background-image: radial-gradient(rgba(183, 37, 251, 0.3), rgba(134, 15, 218, 0.2), rgba(93, 33, 146, 0.2), rgba(25, 5, 75, 0.2), rgba(25, 1, 97, 0.01) 50%);
   position: absolute;
   top: 40vh;
   filter: blur(1vh);
-  transform: perspective(40vh)
-  rotatex(40deg)
-  scale(1, 0.5);
-  animation: shinetwo 5s ease-in-out 10s infinite;
+  transform: perspective(13vh) rotatex(40deg) translatey(-6vh);
+  animation: shinethree 5s ease-in-out 10s infinite;
   transition: scale 1s;
 }
 
@@ -1840,7 +1845,7 @@ html, body{
   line-height: 200%;
   text-shadow: 0px 0px 5px rgba(0, 242, 255, 0.5), 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
   animation-name: thankschange;
-  animation-delay: 17s;
+  animation-delay: 15s;
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards
@@ -1874,6 +1879,12 @@ html, body{
   100% {opacity: 0.8;}
 }
 
+@keyframes shinethree{
+  0% {opacity: 0.6;}
+  50% {opacity: 1;}
+  100% {opacity: 0.6;}
+}
+
 @keyframes fall{
   0% {
     opacity: 0;
@@ -1905,6 +1916,18 @@ html, body{
   }
   100%{
     transform: translateY(0);
+  }
+}
+
+@keyframes counterlevitate{
+  0%{
+    transform: translateY(5vh);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(5vh);
   }
 }
 
