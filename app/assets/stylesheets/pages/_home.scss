@@ -1733,6 +1733,7 @@ html, body{
   width: 29.3vh;
   height: 29.3vh;
   border-radius: 50%;
+  overflow: hidden;
   background-image: radial-gradient(rgba(226, 0, 246, 0.3), rgba(168, 2, 219, 0.2), rgba(71, 33, 146, 0.1), rgba(60, 5, 75, 0.4), rgba(217, 1, 255, 0.2)), radial-gradient(rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at bottom, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at top, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), rgba(0, 0, 0, 0.256));
   animation: levitate 5s ease-in-out 10s infinite;
   border-bottom: 2px ridge rgba(205, 0, 246, 0.4);
