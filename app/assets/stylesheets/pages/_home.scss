@@ -1595,36 +1595,32 @@ html, body{
   animation: fall 20s ease-out 0.5s infinite;
 }
 
-.shootingstar::before,
-.shootingstar::after{
-  content: "";
-}
 
 
 .shootingstar:nth-child(1){
   top: 40%;
   left: 80%;
-  animation-delay: 4s;
+  animation-delay: 13s;
 }
 .shootingstar:nth-child(2){
   top: 13%;
   left: 70%;
-  animation-delay: 6s;
+  animation-delay: 18s;
 }
 .shootingstar:nth-child(3){
   top: 66%;
   left: 84%;
-  animation-delay: 12s;
+  animation-delay: 20s;
 }
 .shootingstar:nth-child(4){
   top: 59%;
   left: 70%;
-  animation-delay: 18s;
+  animation-delay: 24s;
 }
 .shootingstar:nth-child(5){
   top: 29%;
   left: 60%;
-  animation-delay: 8s;
+  animation-delay: 10s;
 }
 
 
@@ -1758,7 +1754,7 @@ html, body{
   width: 59vh;
   height: 30vh;
   border-radius: 50%;
-  background-image: radial-gradient(farthest-side at 50% 20%, rgba(60,4,144,0.69), rgba(49,2,219,0.3), rgba(0, 0, 0, 0.8) 62%, rgba(255,199,125,0.7) 64%, rgba(135,0,246,0.5) 80%,rgba(0, 0, 0, 0.7)),radial-gradient(circle at top, rgba(5,0,70,0.5), rgba(0,20,87,0.247), rgba(45,0,118,0.201), rgba(0,0,0,0.256));
+  background-image: radial-gradient(farthest-side at 50% 20%, rgba(60,4,144,0.69), rgba(71, 2, 219, 0.3), rgba(0, 0, 0, 0.8) 62%, rgba(255,199,125,0.7) 64%, rgba(135,0,246,0.5) 80%,rgba(0, 0, 0, 0.7)),radial-gradient(circle at top, rgba(5,0,70,0.5), rgba(0,20,87,0.247), rgba(45,0,118,0.201), rgba(0,0,0,0.256));
   transform: translateX(-15vh) translateY(-0vh);
   animation: warp 5s ease-in-out 10s infinite;
 
@@ -1788,7 +1784,7 @@ html, body{
   width: 41vh;
   height: 41vh;
   border-radius: 50%;
-  background-image: radial-gradient(rgba(253, 116, 255, 0.4), rgba(160, 42, 223, 0.3), rgba(84, 33, 146, 0.2), rgba(21, 5, 75, 0.2), rgba(144, 0, 255, 0.279) 50%, rgba(144, 0, 255, 0.01) 50%);
+  background-image: radial-gradient(rgba(253, 116, 255, 0.4), rgba(160, 42, 223, 0.3), rgba(84, 33, 146, 0.2), rgba(21, 5, 75, 0.2), rgba(53, 15, 82, 0.77) 50%, rgba(144, 0, 255, 0.01) 50%);
 }
 
 .ground{
