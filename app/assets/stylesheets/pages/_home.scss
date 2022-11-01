@@ -38,14 +38,15 @@ html, body{
 
 
 .titlecard h1{
-  padding: 5px;
+  padding-left: 5px;
   color: transparent;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.9),rgba(191, 251, 255, 0.8),rgba(33, 139, 146, 0.8),rgba(5, 42, 75, 0.8), rgb(0, 0, 0));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.598),rgba(191, 251, 255, 0.735),rgba(33, 139, 146, 0.8)45%,rgba(5, 42, 75, 0.8)49.8%,rgb(132, 255, 255)50%,rgba(5, 42, 75, 0.8)50.3%, rgb(0, 0, 0)52%);
   background-clip: text;
   background-size: 1000%;
-  font-size: calc((10vh + 10vw) / 3.2);
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: calc((8vh + 8vw) / 3.2);
   background-repeat: no-repeat;
   animation-name: titlechange;
   animation-duration: 7s;
@@ -63,37 +64,38 @@ html, body{
 
 .dot {
   z-index: 10;
-  padding-left: 5px;
+  padding-left: 0px;
   padding-bottom: 8px;
-  padding-right: 5px;
-  font-family: 'Permanent Marker', cursive;
+  padding-right: 30px;
+  padding-top: 10px;
+  font-family: 'splash', cursive;
   color: transparent;
-  background: linear-gradient(180deg, rgb(213, 0, 246),rgb(205, 2, 219),rgb(140, 33, 146),rgb(43, 5, 75), rgb(0, 0, 0));
+  background: linear-gradient(180deg, rgb(213, 0, 246),rgb(205, 2, 219),rgb(140, 33, 146)70%,rgb(0, 0, 0)71%, rgb(0, 0, 0));
   background-clip: text;
   background-size: 10vh;
   background-position: bottom;
-  font-size: calc((10vh + 10vw) / 2);
+  font-size: calc((8vh + 8vw) / 2);
   background-repeat: no-repeat;
   animation-name: dotchange, dotshadowchange ;
   animation-delay: 4s;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
+  transform: rotateZ(-10deg);
 
 }
 @keyframes dotchange {
-  0% {background-position: 0px -200px;}
-  10% {background-position: 0px -200px;}
+  0% {background-position: 0px -400px;}
   30% {background-position: 0px 10px;}
   90% {opacity: 1;}
   100% {background-position: 0px 10px;
   opacity: 0;}
 }
 @keyframes dotshadowchange {
-  0% {text-shadow: 0px 0px 13px rgb(0, 0, 0);}
+  0% {text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.541);}
   45% {text-shadow: 0px 0px 13px rgb(0, 0, 0);}
-  90% {text-shadow: 0px 0px 13px rgba(131, 9, 117, 0.3);}
-  100% {text-shadow: 0px 0px 13px rgba(127, 10, 123, 0.3);}
+  90% {text-shadow: 0px 0px 13px rgba(131, 9, 117, 0.5);}
+  100% {text-shadow: 0px 0px 13px rgba(127, 10, 123, 0.5);}
 }
 
 
@@ -1812,7 +1814,7 @@ html, body{
   left:0px;
   padding: 20vw;
   line-height: 200%;
-  text-shadow: 0px 0px 5px rgba(0, 242, 255, 0.5), 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
+  text-shadow: 0px 0px 5px rgba(0, 242, 255, 0.7), 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
   animation-name: thankschange;
   animation-delay: 11s;
   animation-duration: 4s;
@@ -1838,7 +1840,7 @@ html, body{
   left:0px;
   padding: 20vw;
   line-height: 200%;
-  text-shadow: 0px 0px 5px rgba(0, 242, 255, 0.5), 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
+  text-shadow: 0px 0px 5px rgba(0, 242, 255, 0.7), 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
   animation-name: thankschange;
   animation-delay: 15s;
   animation-duration: 4s;

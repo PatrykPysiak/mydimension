@@ -3,12 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+//below extra fonts
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Libre+Barcode+39+Text&family=Megrim&family=Splash&display=swap');
 
 
 // Define fonts for body and headers
 
 $body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: 'Caveat', "Helvetica", "sans-serif";
+$headers-font: 'megrim', "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
