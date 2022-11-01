@@ -6,14 +6,12 @@ html, body{
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   background: black;
+  animation: sitesize 1s 12s forwards;
+  height: 100vh;
 }
 
-.mydimension{
-  overflow-x: hidden;
-  max-width: 100%;
-}
 
 .titlebodycard {
   padding: 20px;
@@ -1943,5 +1941,16 @@ html, body{
     width: 100vh;
     height: 50vh;
     transform: translateX(-34.5vh) translateY(-16vh);
+  }
+}
+
+@keyframes sitesize{
+  0%{
+    height: 100vh;
+  }
+  100%{
+    height: 230vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
