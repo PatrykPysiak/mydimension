@@ -1,0 +1,2125 @@
+
+
+html, body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+  background: black;
+  animation: sitesize 1s 12s forwards;
+  height: 100vh;
+}
+
+
+.titlebodycard {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  animation-name: blackopacitychange;
+  animation-duration: 10s;
+  animation-fill-mode: forwards
+}
+@keyframes blackopacitychange {
+  0% {background-color: rgb(0, 0, 0);}
+  80% {background-color: rgb(0, 0, 0,);}
+  100% {background-color: rgba(0, 0, 0, 1);}
+}
+
+
+
+.titlecard h1{
+  padding-left: 5px;
+  color: transparent;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.598),rgba(191, 251, 255, 0.735),rgba(33, 139, 146, 0.8)45%,rgba(5, 42, 75, 0.8)49.8%,rgb(132, 255, 255)50%,rgba(5, 42, 75, 0.8)50.3%, rgb(0, 0, 0)52%);
+  background-clip: text;
+  background-size: 1000%;
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: calc((8vh + 8vw) / 3.2);
+  background-repeat: no-repeat;
+  animation-name: titlechange;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards
+}
+@keyframes titlechange {
+  0% {background-size: 0%;}
+  10% {background-size: 0%;}
+  90% {opacity: 1;}
+  100% {background-size: 1000%;
+  opacity: 0;}
+}
+
+
+.dot {
+  z-index: 10;
+  padding-left: 0px;
+  padding-bottom: 8px;
+  padding-right: 30px;
+  padding-top: 10px;
+  font-family: 'splash', cursive;
+  color: transparent;
+  background: linear-gradient(180deg, rgb(213, 0, 246),rgb(205, 2, 219),rgb(140, 33, 146)70%,rgb(0, 0, 0)71%, rgb(0, 0, 0));
+  background-clip: text;
+  background-size: 10vh;
+  background-position: bottom;
+  font-size: calc((8vh + 8vw) / 2);
+  background-repeat: no-repeat;
+  animation-name: dotchange, dotshadowchange ;
+  animation-delay: 4.5s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  transform: rotateZ(-10deg);
+
+}
+@keyframes dotchange {
+  0% {background-position: 0px -400px;}
+  30% {background-position: 0px 10px;}
+  90% {opacity: 1;}
+  100% {background-position: 0px 10px;
+  opacity: 0;}
+}
+@keyframes dotshadowchange {
+  0% {text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.541);}
+  45% {text-shadow: 0px 0px 13px rgb(0, 0, 0);}
+  90% {text-shadow: 0px 0px 13px rgba(131, 9, 117, 0.5);}
+  100% {text-shadow: 0px 0px 13px rgba(127, 10, 123, 0.5);}
+}
+
+
+.nova{
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  background-image: radial-gradient(circle, rgb(249, 254, 255) 0%, rgba(238, 55, 255, 0.739) 25%, rgba(208, 36, 255, 0) 40%, rgba(0, 0, 0, 0) 92%);
+  background: cover;
+  animation-name: novachange;
+  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: novachange;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-duration: 3s;
+  -webkit-nimation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards
+}
+@-webkit-keyframes novachange {
+  0% {-webkit-transform: scale(0);
+    opacity: 0.1;}
+  10% {-webkit-transform: scale(0);
+    opacity: 0.3;}
+  70% {-webkit-transform: scale(70);
+    opacity: 1;}
+  100% {-webkit-transform: scale(100);
+    opacity: 0;}
+}
+@keyframes novachange {
+  0% {transform: scale(0);
+    opacity: 0.1;}
+  10% {transform: scale(0);
+    opacity: 0.3;}
+  70% {transform: scale(70);
+    opacity: 1;}
+  100% {transform: scale(100);
+    opacity: 0;}
+}
+
+
+.bodycard{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+
+//___background hue tones for the nebula below this line_______________________________
+
+.cosmicbox{
+  flex-shrink: 0;
+  top: 0;
+  width: 100vw;
+  height: 140vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+.nebulaone{
+  height: 140vh;
+  background: radial-gradient(circle, rgb(255, 84, 238) 0%, rgba(231,83,117,1) 50%, rgba(137,78,154,1) 74%, rgba(69,22,116,1) 84%, rgb(15, 0, 65) 92%);
+  opacity: 0;
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  animation-name: nonechangeone;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.nebulatwo{
+  height: 140vh;
+  background: linear-gradient(135deg, rgba(13, 194, 255, 0.7) 0%, rgba(231,83,117,0.5) 50%, rgb(7, 28, 66) 74%, rgba(69,22,116,0.8) 84%, rgba(5, 1, 115, 0.7) 92%);
+  opacity: 0;
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  animation-name: ntwochange;
+  animation-delay: 8s;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes ntwochange {
+  0% {opacity: 0;}
+  100% {opacity: 0.4;}
+}
+
+.nebulathree{
+  height: 140vh;
+  background: linear-gradient(286deg, rgba(47, 8, 199, 0.6) 0%, rgba(22, 17, 65, 0.8) 50%, rgba(137,78,154,0.6) 74%, rgba(69,22,116,0.9) 84%, rgba(11, 0, 97, 0.8) 92%);
+  opacity: 0;
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  animation-name: nthreechange;
+  animation-delay: 8s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nthreechange {
+  0% {opacity: 0;}
+  100% {opacity: 0.4;}
+}
+
+.nebulafour{
+  height: 140vh;
+  background: linear-gradient(240deg, rgba(64, 0, 191, 0.6) 10%, rgba(52,6,17,1) 24%, rgba(42, 15, 97, 0.8) 59%, rgba(137,78,154,0.8) 74%, rgba(69,22,116,0.8) 84%);
+  opacity: 0;
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  animation-name: nfourchange;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes nfourchange {
+  0% {opacity: 0;}
+  100% {opacity: 0.4;}
+}
+
+//___below are main tones for flow of the nebula________________________________
+
+.skyone{
+  width: calc((100vh + 100vw) );
+  height: calc((100vh + 100vw) );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,1) 0%, rgba(35,8,72,0.7) 60%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:-20vh;
+  right:0px;
+  bottom:0px;
+  left:30vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.skytwo{
+  width: calc((200vh + 200vw) );
+  height: calc((200vh + 200vw) );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(35, 8, 72, 0) 0%, rgba(35, 8, 72, 0) 60%, rgb(49, 5, 96) 75%, rgb(36, 6, 80) 100%);
+  opacity: 0;
+  position: absolute;
+  top:-64vh;
+  right:0px;
+  bottom:0px;
+  left:-10vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+//__here the dark core of the nebula starts_________________________________________
+
+.splotchone{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(23, 1, 54, 0.778) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:90vh;
+  right:0px;
+  bottom:0px;
+  left:15vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwo{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:60vh;
+  right:0px;
+  bottom:0px;
+  left:5vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchthree{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:40vh;
+  right:0px;
+  bottom:0px;
+  left:10vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchfour{
+  width: calc((100vh + 100vw) / 6 );
+  height: calc((100vh + 100vw) / 6 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,1) 0%, rgba(35,8,72,0.9) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:20vh;
+  right:0px;
+  bottom:0px;
+  left:20vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchfive{
+  width: calc((100vh + 100vw) / 6 );
+  height: calc((100vh + 100vw) / 6 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:10vh;
+  right:0px;
+  bottom:0px;
+  left:30vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchsix{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:-20vh;
+  right:0px;
+  bottom:0px;
+  left:50vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchseven{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.5) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:80vh;
+  right:0px;
+  bottom:0px;
+  left:10vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+.splotcheight{
+  width: calc((100vh + 100vw) / 7 );
+  height: calc((100vh + 100vw) / 7 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14, 0, 45, 0) 0%, rgba(35, 8, 72, 0.7) 50%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:50vh;
+  right:0px;
+  bottom:0px;
+  left:20vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchnine{
+  width: calc((100vh + 100vw) / 8 );
+  height: calc((100vh + 100vw) / 8 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:10vh;
+  right:0px;
+  bottom:0px;
+  left:35vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchten{
+  width: calc((100vh + 100vw) / 9 );
+  height: calc((100vh + 100vw) / 9 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(29, 2, 61, 0.5) 0%, rgba(35, 8, 72, 0.6) 50%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:30vh;
+  right:0px;
+  bottom:0px;
+  left:20vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotcheleven{
+  width: calc((100vh + 100vw) / 8 );
+  height: calc((100vh + 100vw) / 8 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:-7vh;
+  right:0px;
+  bottom:0px;
+  left:40vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwelve{
+  width: calc((100vh + 100vw) / 8 );
+  height: calc((100vh + 100vw) / 8 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:0vh;
+  right:0px;
+  bottom:0px;
+  left:40vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchthirteen{
+  width: calc((100vh + 100vw) / 4 );
+  height: calc((100vh + 100vw) / 4 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:-40vh;
+  right:0px;
+  bottom:0px;
+  left:55vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchfourteen{
+  width: calc((100vh + 100vw) / 6 );
+  height: calc((100vh + 100vw) / 6 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.9) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:70vh;
+  right:0px;
+  bottom:0px;
+  left:5vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchfifteen{
+  width: calc((100vh + 100vw) / 12 );
+  height: calc((100vh + 100vw) / 12 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.7) 0%, rgba(35,8,72,0.3) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:15vh;
+  right:0px;
+  bottom:0px;
+  left:50vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchsixteen{
+  width: calc((100vh + 100vw) / 9 );
+  height: calc((100vh + 100vw) / 9 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.2) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:40vh;
+  right:0px;
+  bottom:0px;
+  left:10vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchseventeen{
+  width: calc((100vh + 100vw) / 8 );
+  height: calc((100vh + 100vw) / 8 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.3) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:20vh;
+  right:0px;
+  bottom:0px;
+  left:40vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotcheighteen{
+  width: calc((100vh + 100vw) / 8 );
+  height: calc((100vh + 100vw) / 8 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.4) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:60vh;
+  right:0px;
+  bottom:0px;
+  left:10vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchnineteen{
+  width: calc((100vh + 100vw) / 9 );
+  height: calc((100vh + 100vw) / 9 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.3) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:60vh;
+  right:0px;
+  bottom:0px;
+  left:10vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwenty{
+  width: calc((100vh + 100vw) / 6 );
+  height: calc((100vh + 100vw) / 6 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.3) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:0vh;
+  right:0px;
+  bottom:0px;
+  left:35vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwentyone{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(23, 1, 54, 0.778) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:96vh;
+  right:0px;
+  bottom:0px;
+  left:20vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwentytwo{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:100vh;
+  right:0px;
+  bottom:0px;
+  left:25vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwentythree{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:110vh;
+  right:0px;
+  bottom:0px;
+  left:30vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+.splotchtwentyfour{
+  width: calc((100vh + 100vw) / 6 );
+  height: calc((100vh + 100vw) / 6 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,1) 0%, rgba(35,8,72,0.9) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:95vh;
+  right:0px;
+  bottom:0px;
+  left:27vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwentyfive{
+  width: calc((100vh + 100vw) / 6 );
+  height: calc((100vh + 100vw) / 6 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:10vh;
+  right:0px;
+  bottom:0px;
+  left:30vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwentysix{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.9) 0%, rgba(35,8,72,0.7) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:-20vh;
+  right:0px;
+  bottom:0px;
+  left:50vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwentyseven{
+  width: calc((100vh + 100vw) / 5 );
+  height: calc((100vh + 100vw) / 5 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.8) 0%, rgba(35,8,72,0.6) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:80vh;
+  right:0px;
+  bottom:0px;
+  left:10vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+.splotchtwentyeight{
+  width: calc((100vh + 100vw) / 7 );
+  height: calc((100vh + 100vw) / 7 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.7) 0%, rgba(35,8,72,0.5) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:128vh;
+  right:0px;
+  bottom:0px;
+  left:39vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.splotchtwentynine{
+  width: calc((100vh + 100vw) / 8 );
+  height: calc((100vh + 100vw) / 8 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.8) 0%, rgba(35,8,72,0.6) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:123vh;
+  right:0px;
+  bottom:0px;
+  left:44vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+//bright ones after this________________________________________________________________________
+
+.brightone{
+  width: calc((100vh + 100vw) / 12 );
+  height: calc((100vh + 100vw) / 12 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(112, 47, 104, 0.6) 0%, rgba(105, 27, 127, 0.31) 50%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:15vh;
+  right:0px;
+  bottom:0px;
+  left:50vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brighttwo{
+  width: calc((100vh + 100vw) / 17 );
+  height: calc((100vh + 100vw) / 17 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(112, 47, 104, 0.6) 0%, rgba(35,8,72,0.2) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:37vh;
+  right:0px;
+  bottom:0px;
+  left:17vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightthree{
+  width: calc((100vh + 100vw) / 15);
+  height: calc((100vh + 100vw) / 15);
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(112, 47, 104, 0.6) 0%, rgba(112, 47, 104, 0.3) 40%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top: 37vh;
+  right: 0px;
+  bottom: 0px;
+  left: 46vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightfour{
+  width: calc((100vh + 100vw) / 10 );
+  height: calc((100vh + 100vw) / 10 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(112, 47, 104, 0.5) 0%, rgba(112, 47, 104, 0.3) 30%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:60vh;
+  right:0px;
+  bottom:0px;
+  left:35vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightfive{
+  width: calc((100vh + 100vw) / 18 );
+  height: calc((100vh + 100vw) / 18 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(112, 47, 104, 0.3) 0%, rgba(112, 47, 104, 0.1) 40%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:60vh;
+  right:0px;
+  bottom:0px;
+  left:5vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightsix{
+  width: calc((100vh + 100vw) / 15);
+  height: calc((100vh + 100vw) / 15);
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(112, 47, 104, 0.5) 0%, rgba(112, 47, 104, 0.2) 50%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top: 29vh;
+  right: 0px;
+  bottom: 0px;
+  left: 47vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightseven{
+  width: calc((100vh + 100vw) / 12);
+  height: calc((100vh + 100vw) / 12);
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(112, 47, 104, 0.4) 0%, rgba(112, 47, 104, 0.1) 50%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top: 30vh;
+  right: 0px;
+  bottom: 0px;
+  left: 50vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+
+
+
+.brightoneshadow{
+  width: calc((100vh + 100vw) / 12 );
+  height: calc((100vh + 100vw) / 12 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.3) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:18vh;
+  right:0px;
+  bottom:0px;
+  left:48vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brighttwoshadow{
+  width: calc((100vh + 100vw) / 16 );
+  height: calc((100vh + 100vw) / 16 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.4) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:38vh;
+  right:0px;
+  bottom:0px;
+  left:15vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightthreeshadow{
+  width: calc((100vh + 100vw) / 19 );
+  height: calc((100vh + 100vw) / 19 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(42, 18, 71, 0.3) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:38vh;
+  right:0px;
+  bottom:0px;
+  left:46vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightfourshadow{
+  width: calc((100vh + 100vw) / 10 );
+  height: calc((100vh + 100vw) / 10 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(54, 10, 63, 0.3) 30%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:70vh;
+  right:0px;
+  bottom:0px;
+  left:30vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightfiveshadow{
+  width: calc((100vh + 100vw) / 14);
+  height: calc((100vh + 100vw) / 14);
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14, 0, 45, 0.2) 0%, rgba(91, 10, 107, 0.1) 40%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top: 65vh;
+  right: 0px;
+  bottom: 0px;
+  left: 5vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightsixshadow{
+  width: calc((100vh + 100vw) / 16 );
+  height: calc((100vh + 100vw) / 16 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14, 0, 45, 0.6) 0%, rgba(112, 47, 104, 0.1) 50%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:40vh;
+  right:0px;
+  bottom:0px;
+  left:42vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightsevenshadow{
+  width: calc((100vh + 100vw) / 16 );
+  height: calc((100vh + 100vw) / 16 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35, 5, 71, 0.4) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:30vh;
+  right:0px;
+  bottom:0px;
+  left:42vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brighteightshadow{
+  width: calc((100vh + 100vw) / 12 );
+  height: calc((100vh + 100vw) / 12 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.3) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:18vh;
+  right:0px;
+  bottom:0px;
+  left:48vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightnineshadow{
+  width: calc((100vh + 100vw) / 16 );
+  height: calc((100vh + 100vw) / 16 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35,8,72,0.4) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:38vh;
+  right:0px;
+  bottom:0px;
+  left:15vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brighttenshadow{
+  width: calc((100vh + 100vw) / 15);
+  height: calc((100vh + 100vw) / 15);
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14, 0, 45, 0.4) 0%, rgba(69, 0, 88, 0.1) 50%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top: 77vh;
+  right: 0px;
+  bottom: 0px;
+  left: 31vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightelevenshadow{
+  width: calc((100vh + 100vw) / 10 );
+  height: calc((100vh + 100vw) / 10 );
+  overflow: hidden;
+  background: radial-gradient(circle, #0e002db0 0%, rgba(22, 5, 52, 0.3) 50%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top: 61vh;
+  right: 0px;
+  bottom: 0px;
+  left: 27vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brighttwelveshadow{
+  width: calc((100vh + 100vw) / 18 );
+  height: calc((100vh + 100vw) / 18 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14, 0, 45, 0.1) 0%, rgba(54, 10, 63, 0.2) 30%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top: 66vh;
+  right: 0px;
+  bottom: 0px;
+  left: 10vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightthirteenshadow{
+  width: calc((100vh + 100vw) / 14);
+  height: calc((100vh + 100vw) / 14);
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14, 0, 45, 0.5) 0%, rgba(26, 0, 52, 0.3) 50%, rgba(53, 15, 95, 0) 70%, rgba(69, 22, 116, 0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:35vh;
+  right:0px;
+  bottom:0px;
+  left:40vw;
+  animation-name: nonechangeeight;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.brightfourteenshadow{
+  width: calc((100vh + 100vw) / 16 );
+  height: calc((100vh + 100vw) / 16 );
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(14,0,45,0.6) 0%, rgba(35, 5, 71, 0.4) 50%, rgba(53,15,95,0) 70%, rgba(69,22,116,0) 100%);
+  opacity: 0;
+  position: absolute;
+  top:30vh;
+  right:0px;
+  bottom:0px;
+  left:42vw;
+  animation-name: nonechangeeight;
+  animation-delay: 8s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+
+
+
+
+//_here be done with nebula____________________________________________________________________
+
+//___implementation of stars below_______________________________________________________
+
+.starsbelownebulaone{
+  position: absolute;
+  transform: rotate(0.7turn);
+  top: -570px;
+  right: 29px;
+  bottom: -368px;
+  left: 558px;
+  opacity: 0;
+  animation: nonechangeone 3s ease-in 8.4s forwards;
+}
+.starsbelownebulatwo{
+  position: absolute;
+  transform: rotate(0.1turn);
+  top: -200px;
+  right: 29px;
+  bottom: 604px;
+  left: 306px;
+  opacity: 0;
+  animation: nonechangeone 2s ease-in 8.2s forwards;
+}
+
+.starsabovenebula{
+  opacity: 0;
+  animation: nonechangeone 4s ease-in 8s forwards;
+}
+
+
+.starbox{
+  width: 100vw;
+  height: 140vh;
+  overflow: hidden;
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  animation: shine 3.5s ease-in-out 11.9s infinite;
+}
+
+.starboxtwo{
+  width: 100vw;
+  height: 140vh;
+  overflow: hidden;
+  position: absolute;
+  top: -266px;
+  right: 0px;
+  bottom: 0px;
+  left: -353px;
+  transform: rotate(0.01turn);
+  animation: shine 3s ease-in-out 10.7s infinite;
+}
+
+.starboxthree{
+  width: 70vw;
+  height: 84vh;
+  overflow: hidden;
+  position: absolute;
+  top: -269px;
+  right: 0px;
+  bottom: 0px;
+  left: 285px;
+  transform: rotate(0.25turn);
+  animation: shine 4s ease-in-out 9.6s infinite;
+}
+
+.starboxfour{
+  width: 70vw;
+  height: 84vh;
+  overflow: hidden;
+  position: absolute;
+  top: 207px;
+  right: 0px;
+  bottom: 0px;
+  left: -15px;
+  transform: rotate(0.5turn);
+  animation: shine 5s ease-in-out 9s infinite;
+}
+
+
+.starcluster{
+  position: absolute;
+}
+.starcluster:nth-child(1){
+  top: 40%;
+  left: 56%;
+  height: 30vh;
+  width: 20vw;
+}
+.starcluster:nth-child(2){
+  top: 60%;
+  left: 26%;
+  height: 20vh;
+  width: 20vw;
+}
+.starcluster:nth-child(3){
+  top: 40%;
+  left: 56%;
+  height: 20vh;
+  width: 20vw;
+}
+.starcluster:nth-child(4){
+  top: 40%;
+  left: 16%;
+  height: 20vh;
+  width: 20vw;
+}
+.starcluster:nth-child(5){
+  top: 00%;
+  left: 76%;
+  height: 20vh;
+  width: 40vw;
+}
+.starcluster:nth-child(6){
+  top: 60%;
+  left: 06%;
+  height: 40vh;
+  width: 20vw;
+}
+.starcluster:nth-child(7){
+  top: 20%;
+  left: 76%;
+  height: 20vh;
+  width: 50vw;
+}
+.starcluster:nth-child(8){
+  top: 30%;
+  left: 46%;
+  height: 20vh;
+  width: 40vw;
+}
+.starcluster:nth-child(9){
+  top: 30%;
+  left: 36%;
+  height: 40vh;
+  width: 40vw;
+}
+.starcluster:nth-child(10){
+  top: 20%;
+  left: 46%;
+  height: 20vh;
+  width: 40vw;
+}
+.starcluster:nth-child(11){
+  top: 60%;
+  left: 46%;
+  height: 50vh;
+  width: 50vw;
+}
+.starcluster:nth-child(12){
+  top: 30%;
+  left: 76%;
+  height: 20vh;
+  width: 20vw;
+}
+.starcluster:nth-child(13){
+  top: 30%;
+  left: 96%;
+  height: 10vh;
+  width: 10vw;
+}
+.starcluster:nth-child(14){
+  top: 30%;
+  left: 26%;
+  height: 20vh;
+  width: 20vw;
+}
+.starcluster:nth-child(15){
+  top: 30%;
+  left: 56%;
+  height: 20vh;
+  width: 20vw;
+}
+.starcluster:nth-child(16){
+  top: 20%;
+  left: 76%;
+  height: 60vh;
+  width: 60vw;
+}
+.starcluster:nth-child(17){
+  top: 00%;
+  left: 06%;
+  height: 40vh;
+  width: 40vw;
+}
+.starcluster:nth-child(18){
+  top: 20%;
+  left: 36%;
+  height: 20vh;
+  width: 20vw;
+}
+.starcluster:nth-child(19){
+  top: 60%;
+  left: 76%;
+  height: 20vh;
+  width: 20vw;
+}
+.starcluster:nth-child(20){
+  top: 40%;
+  left: 86%;
+  height: 30vh;
+  width: 30vw;
+}
+
+.star{
+  will-change: opacity;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+.star:nth-child(1){
+  top: 30%;
+  left: 46%;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.728),0 0 5px rgba(255, 255, 255, 0.884);
+
+}
+.star:nth-child(2){
+  top: 13%;
+  left: 51%;
+  background: white;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.687);
+}
+.star:nth-child(3){
+  top: 66%;
+  left: 74%;
+  background: rgb(253, 205, 205);
+  box-shadow: 0 0 2px rgb(255, 255, 255);
+
+}
+.star:nth-child(4){
+  top: 59%;
+  left: 22%;
+  background: white;
+}
+.star:nth-child(5){
+  top: 56%;
+  left: 74%;
+  background: rgba(255, 255, 255, 0.838);
+}
+.star:nth-child(6){
+  top: 10%;
+  left: 43%;
+  background: rgb(148, 255, 255);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.753),0 0 4px rgba(255, 255, 255, 0.753);
+
+}
+.star:nth-child(7){
+  top: 59%;
+  left: 67%;
+  background: rgba(255, 255, 255, 0.79);
+}
+.star:nth-child(8){
+  top: 74%;
+  left: 86%;
+  background: rgb(255, 233, 152);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.836);
+
+}
+.star:nth-child(9){
+  top: 50%;
+  left: 03%;
+  background: white;
+  box-shadow: 0 0 4px rgb(255, 255, 255);
+
+}
+.star:nth-child(10){
+  top: 33%;
+  left: 20%;
+  background: rgba(255, 255, 255, 0.893);
+}
+.star:nth-child(11){
+  top: 44%;
+  left: 51%;
+  background: rgb(255, 199, 199);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.779);
+}
+.star:nth-child(12){
+  top: 29%;
+  left: 67%;
+  background: rgba(255, 255, 255, 0.737);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.884);
+}
+.star:nth-child(13){
+  top: 8%;
+  left: 9%;
+  background: rgb(255, 213, 213);
+  box-shadow: 0 0 4px rgb(255, 255, 255),0 0 8px rgb(255, 255, 255);
+
+}
+.star:nth-child(14){
+  top: 66%;
+  left: 22%;
+  background: rgba(255, 255, 255, 0.884);
+}
+.star:nth-child(15){
+  top: 30%;
+  left: 23%;
+  background: rgba(255, 255, 255, 0.751);
+}
+.star:nth-child(16){
+  top: 24%;
+  left: 45%;
+  background: rgb(193, 255, 246);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.678);
+}
+.star:nth-child(17){
+  top: 50%;
+  left: 26%;
+  background: rgb(255, 233, 200);
+  box-shadow: 0 0 1px rgb(255, 255, 255);
+
+}
+.star:nth-child(18){
+  top: 27%;
+  left: 25%;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 0 2px rgb(255, 255, 255);
+}
+.star:nth-child(19){
+  top: 67px;
+  left: 68px;
+  background: rgb(254, 182, 255);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.82);
+
+}
+.star:nth-child(20){
+  top: 78%;
+  left: 70%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+
+//___shooting stars below______________________________________________________________________
+
+.shootingstarbox{
+  width: 200vw;
+  height: 140vh;
+  overflow: hidden;
+  position: absolute;
+  top:-30vh;
+  right:0px;
+  bottom:0px;
+  left:-30vw;
+  transform: rotateZ(-35deg);
+  opacity: 0;
+  animation: nonechangeone 4s ease-in 8s forwards;
+}
+
+
+.shootingstar{
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg,rgba(255, 196, 147, 0.292) 0%,rgba(255, 255, 255, 0) 100%);
+  animation: fall 20s ease-out 0.5s infinite;
+}
+
+
+
+.shootingstar:nth-child(1){
+  top: 40%;
+  left: 80%;
+  animation-delay: 13s;
+}
+.shootingstar:nth-child(2){
+  top: 13%;
+  left: 70%;
+  animation-delay: 18s;
+}
+.shootingstar:nth-child(3){
+  top: 66%;
+  left: 84%;
+  animation-delay: 20s;
+}
+.shootingstar:nth-child(4){
+  top: 59%;
+  left: 70%;
+  animation-delay: 24s;
+}
+.shootingstar:nth-child(5){
+  top: 29%;
+  left: 60%;
+  animation-delay: 10s;
+}
+
+
+
+//__stars and shootingstars placement finished here_______________________________________
+
+.skybox{
+  flex-shrink: 0;
+  top: 0;
+  width: 100vw;
+  height: 140vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(23,0,74,0.7) 0%, rgba(37,0,99,0.4) 14%, rgba(85, 0, 124, 0) 40%,rgba(255, 0, 179, 0.3) 80%, rgba(215, 79, 95, 0.6) 95%, rgba(255, 195, 91, 0.7) 100%);
+  opacity: 0;
+  position:absolute;
+  animation-name: nonechangeone;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+.sun{
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(255, 210, 142, 0.6) 0%, rgba(197, 70, 123, 0.2) 30%, rgba(197, 70, 123, 0) 50%, rgba(255, 158, 0, 0) 50%);
+  bottom: -25vw;
+  left: 45vw;
+  transform: scaleX(5);
+}
+
+.mountain{
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+  bottom: 3vw;
+  left: 10vw;
+  background: linear-gradient(180deg, rgb(47, 0, 74) 0%, rgba(63, 0, 99, 0.5) 60%,rgba(49, 0, 99, 0.1) 90%, rgba(56,0,124,0) 100%);
+  transform: scaleX(2);
+  clip-path: polygon(0 100%,1% 93%,6% 85%,10% 83%,15% 74%,18% 78%,24% 73%,28% 78%,29% 83%,33% 88%,36% 83%, 38% 89%, 41% 94%, 47% 85%, 55% 80%, 59% 76%, 65% 74%, 68% 78%, 70% 74%, 73% 70%, 78% 68%, 85% 63%, 89% 73%, 93% 79%, 96% 84%, 99% 94%, 100% 100%) ;
+}
+
+.mountain:nth-child(1){
+  bottom: 1vw;
+  left: 5vw;
+  clip-path: polygon(0 100%,1% 93%,6% 85%,10% 83%,15% 78%,18% 68%,24% 73%,28% 88%,29% 83%,33% 88%,36% 83%, 38% 94%, 41% 76%, 47% 65%, 55% 75%, 59% 76%, 65% 84%, 68% 78%, 70% 74%, 73% 70%, 78% 65%, 85% 70%, 89% 76%, 93% 84%, 96% 88%, 99% 94%, 100% 100%) ;
+}
+.mountain:nth-child(2){
+  bottom: 2vw;
+  left: 87vw;
+
+  clip-path: polygon(0 100%,1% 98%,4% 94%,6% 89%,8% 85%,11% 90%,16% 89%,19% 83%,23% 85%,28% 81%,29% 78%,31% 74%,34% 72%,37% 85%,40% 83%,43% 88%,46% 83%, 50% 94%, 53% 76%, 56% 65%, 58% 75%, 61% 76%, 65% 84%, 68% 78%, 70% 74%, 73% 70%, 78% 65%, 85% 70%, 89% 76%, 93% 84%, 96% 88%, 99% 94%, 100% 100%) ;
+}
+.mountain:nth-child(3){
+  z-index: 2;
+  bottom: 0;
+  left: 23vw;
+  background: linear-gradient(180deg, rgb(21, 10, 44) 0%, rgba(36, 15, 72, 0.7) 80%,rgba(40, 9, 95, 0.6) 90%, rgba(56,0,124,0.1) 100%);
+  clip-path: polygon(0 100%, 1% 93%, 6% 85%, 10% 83%, 15% 78%, 18% 73%, 24% 73%, 28% 78%, 29% 83%, 33% 88%, 36% 83%, 38% 85%, 41% 76%, 47% 65%, 55% 75%, 59% 76%, 65% 84%, 68% 78%, 70% 74%, 73% 70%, 78% 75%, 85% 84%, 88% 81%, 89% 83%, 93% 84%, 96% 88%, 99% 94%, 100% 100%) ;
+}
+.mountain:nth-child(4){
+  bottom: 2vw;
+  left: 45vw;
+  background: linear-gradient(180deg, rgb(20, 1, 60) 0%, rgba(38, 7, 91, 0.5) 80%,rgba(37,0,99,0.3) 90%, rgba(56,0,124,0) 100%);
+  clip-path: polygon(0 100%, 1% 93%, 6% 85%, 10% 83%, 15% 70%, 18% 72%, 24% 80%, 28% 80%, 29% 80%, 33% 82%, 36% 87%, 38% 89%, 41% 84%, 47% 80%, 50% 82%, 55% 89%, 59% 85%, 62% 84%, 65% 87%, 68% 88%, 70% 86%, 73% 82%, 78% 79%, 85% 81%, 89% 86%, 93% 84%, 96% 88%, 99% 94%, 100% 100%) ;
+}
+.mountain:nth-child(5){
+  z-index: 3;
+  bottom: 0;
+  left: 75vw;
+  clip-path: polygon(0 100%, 1% 81%, 2% 78%, 3% 75%, 4% 74%, 6% 73%, 8% 71%, 10% 72%, 12% 75%, 14% 75%, 15% 76%, 16% 77%, 17% 76%, 19% 78%, 20% 78%, 21% 78%, 23% 75%, 25% 73%, 26% 75%, 27% 76%, 28% 75%, 30% 86%, 32% 89%, 34% 93%, 35% 91%, 37% 79%, 39% 74%, 42% 75%, 44% 78%, 46% 74%, 47% 78%, 48% 74%, 50% 71%, 52% 68%, 53% 64%, 55% 60%, 58% 64%, 60% 71%, 62% 68%, 64% 64%, 65% 61%, 68% 57%, 70% 52%, 72% 56%, 73% 49%, 75% 46%, 76% 58%, 78% 63%, 80% 65%, 82% 64%, 83% 62%, 84% 58%, 85% 55%, 86% 53%, 88% 50%, 90% 47%, 91% 48%, 93% 60%, 94% 66%, 95% 70%, 96% 73%, 97% 78%, 98% 83%, 99% 89%, 100% 100%) ;
+  background: rgba(0, 0, 0, 1);
+}
+.mountain:nth-child(6){
+  z-index: 3;
+  bottom: 0;
+  width: 40vw;
+  left: 15vw;
+  background: rgba(0, 0, 0, 1);
+  clip-path: polygon(0 100%, 1% 81%, 2% 78%, 3% 75%, 4% 74%, 6% 43%, 7% 50%, 8% 64%, 9% 61%, 10% 60%, 11% 63%, 12% 68%, 14% 73%, 15% 76%, 16% 77%, 17% 76%, 19% 78%, 20% 78%, 21% 78%, 23% 76%, 25% 70%, 26% 75%, 27% 76%, 28% 85%, 30% 86%, 32% 91%, 34% 98%, 35% 91%, 37% 89%, 39% 94%, 42% 95%, 44% 88%, 46% 84%, 47% 88%, 48% 84%, 50% 81%, 52% 84%, 53% 84%, 55% 91%, 58% 94%, 60% 92%, 62% 86%, 64% 84%, 65% 84%, 68% 87%, 70% 92%, 72% 96%, 73% 99%, 74% 95%, 75% 86%, 76% 88%, 78% 83%, 80% 85%, 82% 84%, 83% 82%, 84% 88%, 85% 85%, 86% 83%, 88% 80%, 90% 87%, 91% 88%, 93% 80%, 94% 86%, 95% 80%, 96% 83%, 97% 88%, 98% 93%, 99% 97%, 100% 100%) ;
+}
+
+.cloudboxone{
+  z-index: 1;
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+  bottom: 0vh;
+  left: 0vw;
+  animation: cloudbox 5s linear 1s infinite;
+}
+.cloudboxtwo{
+  z-index: 1;
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+  bottom: 0.2vh;
+  left: 5vw;
+  animation: cloudbox 5s linear 3.3s infinite;
+}
+.cloudboxthree{
+  z-index: 2;
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+  bottom: -1.6vh;
+  left: 20vw;
+  animation: cloudbox 5s linear 2.4s infinite;
+}
+.cloudboxfour{
+  z-index: 2;
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+  bottom: -2vh;
+  left: 26vw;
+  animation: cloudbox 5s linear 4.2s infinite;
+}
+.cloudboxfive{
+  z-index: 2;
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+  bottom: 0.2vh;
+  left: 67vw;
+  animation: cloudbox 5s linear 3.5s infinite;
+}
+.cloudboxsix{
+  z-index: 2;
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+  bottom: 0.5vh;
+  left: 70vw;
+  animation: cloudbox 5s linear 3.7s infinite;
+}
+
+
+
+
+.cloud{
+  bottom: 0vw;
+  left: 1vw;
+  width: calc(5vw + 5vh);
+  height: calc(2vw + 3vh);
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(255, 187, 84, 0.15),rgba(255, 255, 255, 0) 50%);
+  position: absolute;
+  animation: cloud 5s linear 1s infinite;
+}
+.cloud:nth-child(1){
+  left: 0px;
+  bottom: 6px;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+.cloud:nth-child(2){
+  left: 6px;
+  bottom: 10px;
+  animation-delay: 2s;
+  animation-duration: 6s;
+}
+.cloud:nth-child(3){
+  left: 9px;
+  bottom: 2px;
+  animation-delay: 1s;
+  animation-duration: 7s;
+}
+.cloud:nth-child(4){
+  left: 15px;
+  bottom: 5px;
+  animation-delay: 2s;
+  animation-duration: 5s;
+}
+.cloud:nth-child(5){
+  left: 21px;
+  bottom: 9px;
+  animation-delay: 3s;
+  animation-duration: 7s;
+}
+.cloud:nth-child(6){
+  left: 23px;
+  bottom: 0px;
+  animation-delay: 4s;
+  animation-duration: 6s;
+}
+.cloud:nth-child(7){
+  left: 28px;
+  bottom: 5px;
+  animation-delay: 1s;
+  animation-duration: 7s;
+}
+.cloud:nth-child(8){
+  left: 32px;
+  bottom: 11px;
+  animation-delay: 2s;
+  animation-duration: 5s;
+}
+
+
+.landbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 90vh;
+  padding-bottom: 20vh;
+  overflow: hidden;
+  background: black;
+  opacity: 0;
+  position: absolute;
+  top:calc((140vh - 1px) );;
+  animation-name: nonechangeone;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+
+.ball{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 29.3vh;
+  height: 29.3vh;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: radial-gradient(rgba(226, 0, 246, 0.3), rgba(168, 2, 219, 0.2), rgba(71, 33, 146, 0.1), rgba(60, 5, 75, 0.4), rgba(217, 1, 255, 0.2)), radial-gradient(rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at bottom, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at top, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), rgba(0, 0, 0, 0.256));
+  animation: levitate 5s ease-in-out 10s infinite;
+  border-bottom: 2px ridge rgba(205, 0, 246, 0.4);
+  border-left: 1px ridge rgba(55, 11, 145, 0.4);
+  border-right: 1px ridge rgba(55, 11, 145, 0.4);
+}
+.ballshine{
+  position: absolute;
+  flex-shrink: 0;
+  overflow: hidden;
+  width: 29vh;
+  height: 29vh;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at 50% 80%, rgba(205, 0, 246, 0.628), rgba(118, 2, 219, 0.564), rgba(33, 65, 146, 0.281), black 100%), radial-gradient(circle at top, rgba(5, 0, 70, 0.5), rgba(0, 20, 87, 0.247), rgba(45, 0, 118, 0.201), rgba(0, 0, 0, 0.256)) ;
+  border-bottom: 2px ridge rgba(160, 0, 246, 0.4);
+  border-left: 1px ridge rgba(246, 115, 0, 0.3);
+  border-right: 1px ridge rgba(246, 115, 0, 0.3);
+}
+.landreflection{
+  position: absolute;
+  flex-shrink: 0;
+  width: 59vh;
+  height: 30vh;
+  border-radius: 50%;
+  background-image: radial-gradient(farthest-side at 50% 20%, rgba(60,4,144,0.69), rgba(71, 2, 219, 0.3), rgba(0, 0, 0, 0.8) 62%, rgba(255,199,125,0.7) 64%, rgba(135,0,246,0.5) 80%,rgba(0, 0, 0, 0.7)),radial-gradient(circle at top, rgba(5,0,70,0.5), rgba(0,20,87,0.247), rgba(45,0,118,0.201), rgba(0,0,0,0.256));
+  transform: translateX(-15vh) translateY(-0vh);
+  animation: warp 5s ease-in-out 10s infinite;
+
+}
+.ballglow{
+  scale: 0.3;
+  position: absolute;
+  flex-shrink: 0;
+  width: 90vh;
+  height: 90vh;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(253, 116, 255, 0.4), rgba(160, 42, 223, 0.3), rgba(84, 33, 146, 0.2), rgba(21, 5, 75, 0.2), rgba(15, 1, 97, 0.01) 50%);
+  animation: shinetwo 5s ease-in-out 10s infinite,
+             levitate 5s ease-in-out 10s infinite;
+  transition: scale 1s;
+}
+.ballglow:hover{
+  scale: 1.0;
+}
+.ballglow:hover ~ .ground{
+  scale: (200% 100% 200%);
+}
+
+.borderballglow{
+  position: absolute;
+  flex-shrink: 0;
+  width: 41vh;
+  height: 41vh;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(253, 116, 255, 0.4), rgba(160, 42, 223, 0.3), rgba(84, 33, 146, 0.2), rgba(21, 5, 75, 0.2), rgba(53, 15, 82, 0.77) 50%, rgba(144, 0, 255, 0.01) 50%);
+}
+
+.ground{
+  height: 50vh;
+  width: 50vh;
+  background-image: radial-gradient(rgba(183, 37, 251, 0.3), rgba(134, 15, 218, 0.2), rgba(93, 33, 146, 0.2), rgba(25, 5, 75, 0.2), rgba(25, 1, 97, 0.01) 50%);
+  position: absolute;
+  top: 40vh;
+  filter: blur(1vh);
+  transform: perspective(13vh) rotatex(40deg) translatey(-6vh);
+  animation: shinethree 5s ease-in-out 10s infinite;
+  transition: scale 1s;
+}
+
+
+.textone h1{
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  padding: 20vw;
+  line-height: 150%;
+  text-shadow: 0px 0px 5px rgba(0, 242, 255, 0.7), 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
+  animation-name: thankschange;
+  animation-delay: 11s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes thankschange {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.texttwo h1{
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position: absolute;
+  top:calc(105vh - 25vw);
+  right:0px;
+  bottom:0px;
+  left:0px;
+  padding: 20vw;
+  line-height: 150%;
+  text-shadow: 0px 0px 5px rgba(0, 242, 255, 0.7), 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
+  animation-name: thankschange;
+  animation-delay: 15s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards
+}
+@keyframes thankschange {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+
+@keyframes nonechangeone {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes nonechangeeight {
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+
+@keyframes shine{
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@keyframes shinetwo{
+  0% {opacity: 0.8;}
+  50% {opacity: 0.6;}
+  100% {opacity: 0.8;}
+}
+
+@keyframes shinethree{
+  0% {opacity: 0.6;}
+  50% {opacity: 1;}
+  100% {opacity: 0.6;}
+}
+
+@keyframes fall{
+  0% {
+    opacity: 0;
+    width: 0px;
+    transform: translateX(0);
+  }
+  3% {
+    opacity: 1;
+    width: 400px;
+
+  }
+  6% {
+    opacity: 0;
+    width: 0px;
+    transform: translateX(-1300px);
+  }
+  100%{
+    opacity: 0;
+    width: 0px;
+  }
+}
+
+@keyframes levitate{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(5vh);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes counterlevitate{
+  0%{
+    transform: translateY(5vh);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(5vh);
+  }
+}
+
+@keyframes warp{
+  0%{
+    width: 100vh;
+    height: 50vh;
+    transform: translateX(-34.5vh) translateY(-16vh);
+  }
+  50%{
+    width: 59vh;
+    height: 30vh;
+    transform: translateX(-15vh) translateY(-0vh);
+  }
+  100%{
+    width: 100vh;
+    height: 50vh;
+    transform: translateX(-34.5vh) translateY(-16vh);
+  }
+}
+
+@keyframes sitesize{
+  0%{
+    height: 100vh;
+  }
+  100%{
+    height: 230vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@keyframes cloudbox{
+  0%{
+    transform: translateX(0vw);
+    opacity: 0;
+  }
+  1%{
+    opacity: 0.1;
+  }
+  50%{
+    opacity: 1;
+  }
+  99%{
+    opacity: 0.1;
+  }
+  100%{
+    transform: translateX(20vw);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud{
+  0%{
+    transform: rotate(0deg)
+    scale(0)
+    translateX(0px);
+    transform-origin: left center;
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  50%{
+    transform: rotate(-60deg)
+     scale(1)
+    translateX(0px);
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    transform: rotate(120deg)
+    scale(0)
+    translateX(0px);
+    opacity: 0;
+    transform-origin: right center;
+  }
+}
