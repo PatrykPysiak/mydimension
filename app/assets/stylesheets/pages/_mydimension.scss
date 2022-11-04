@@ -1848,7 +1848,6 @@ html, body{
   width: 29.3vh;
   height: 29.3vh;
   border-radius: 50%;
-  overflow: hidden;
   background-image: radial-gradient(rgba(226, 0, 246, 0.3), rgba(168, 2, 219, 0.2), rgba(71, 33, 146, 0.1), rgba(60, 5, 75, 0.4), rgba(217, 1, 255, 0.2)), radial-gradient(rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at bottom, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at top, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), rgba(0, 0, 0, 0.256));
   animation: levitate 5s ease-in-out 10s infinite;
   border-bottom: 2px ridge rgba(205, 0, 246, 0.4);
@@ -1856,8 +1855,11 @@ html, body{
   border-right: 1px ridge rgba(55, 11, 145, 0.4);
 }
 .ballshine{
+  display: flex;
   position: absolute;
   flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   width: 29vh;
   height: 29vh;
@@ -1870,13 +1872,12 @@ html, body{
 .landreflection{
   position: absolute;
   flex-shrink: 0;
-  width: 59vh;
-  height: 30vh;
-  border-radius: 50%;
-  background-image: radial-gradient(farthest-side at 50% 20%, rgba(60,4,144,0.69), rgba(71, 2, 219, 0.3), rgba(0, 0, 0, 0.8) 62%, rgba(255,199,125,0.7) 64%, rgba(135,0,246,0.5) 80%,rgba(0, 0, 0, 0.7)),radial-gradient(circle at top, rgba(5,0,70,0.5), rgba(0,20,87,0.247), rgba(45,0,118,0.201), rgba(0,0,0,0.256));
-  transform: translateX(-15vh) translateY(-0vh);
-  animation: warp 5s ease-in-out 10s infinite;
-
+  background-image: radial-gradient(ellipse at 50% 40%, rgba(60, 4, 144, 0.69), rgba(71, 2, 219, 0.3), rgba(0, 0, 0, 0.8) 22%, rgba(255, 199, 125, 0.7) 23%, rgba(135, 0, 246, 0.5) 30%, rgb(0, 0, 0)), radial-gradient(circle at top, rgba(5, 0, 70, 0.54), rgba(0, 20, 87, 0.247), rgba(45, 0, 118, 0.201), rgba(0, 0, 0, 0.93));
+  -webkit-animation: warp 5s ease-in-out 10s infinite;
+  animation: warp ease-in-out 2.5s infinite alternate;
+  transform-origin: top;
+  transform: rotateX(40deg);
+  bottom: -42vh;
 }
 .ballglow{
   scale: 0.3;
@@ -2047,6 +2048,24 @@ html, body{
   }
 }
 
+
+@keyframes warp{
+  0%{
+    width: 105vh;
+    height: 87vh;
+    opacity: 0.7;
+  }
+  100%{
+    width: 96vh;
+    height: 90vh;
+    transform: rotateX(33deg);
+    opacity: 0.8;
+  }
+}
+
+
+/* Below is the old warp. clunky and buggy if resized, some changes in the target item are required as well (obviously)
+
 @keyframes warp{
   0%{
     width: 100vh;
@@ -2064,6 +2083,10 @@ html, body{
     transform: translateX(-34.5vh) translateY(-16vh);
   }
 }
+
+*/
+
+
 
 @keyframes sitesize{
   0%{
