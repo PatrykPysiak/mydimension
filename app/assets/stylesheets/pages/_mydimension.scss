@@ -13,7 +13,7 @@ html, body{
 
 
 .titlebodycard {
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,9 +35,14 @@ html, body{
 }
 
 
+.titlecard{
+  display: flex;
+  flex-direction: row;
 
+}
 .titlecard h1{
-  padding-left: 5px;
+  padding-top: 2vh;
+  padding-left: 45px;
   color: transparent;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -63,21 +68,19 @@ html, body{
 
 .dot {
   z-index: 10;
-  padding-left: 0px;
-  padding-bottom: 8px;
+  padding-bottom: 30px;
   padding-right: 30px;
-  padding-top: 10px;
+  top: 0;
   font-family: 'splash', cursive;
   color: transparent;
-  background: linear-gradient(180deg, rgb(213, 0, 246),rgb(205, 2, 219),rgb(140, 33, 146)70%,rgb(0, 0, 0)71%, rgb(0, 0, 0));
+  background: linear-gradient(180deg, rgb(232, 78, 253),rgb(243, 78, 255),rgb(185, 39, 193)70%,rgb(0, 0, 0)71%, rgb(0, 0, 0));
   background-clip: text;
-  background-size: 10vh;
-  background-position: bottom;
+  background-size: 12vh;
   font-size: calc((8vh + 8vw) / 2);
   background-repeat: no-repeat;
   animation-name: dotchange, dotshadowchange ;
   animation-delay: 4.5s;
-  animation-duration: 2s;
+  animation-duration: 2.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   transform: rotateZ(-10deg);
@@ -85,16 +88,16 @@ html, body{
 }
 @keyframes dotchange {
   0% {background-position: 0px -400px;}
-  30% {background-position: 0px 10px;}
+  30% {background-position: 0px 5px;}
   90% {opacity: 1;}
-  100% {background-position: 0px 10px;
+  100% {background-position: 0px 5px;
   opacity: 0;}
 }
 @keyframes dotshadowchange {
   0% {text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.541);}
   45% {text-shadow: 0px 0px 13px rgb(0, 0, 0);}
-  90% {text-shadow: 0px 0px 13px rgba(131, 9, 117, 0.5);}
-  100% {text-shadow: 0px 0px 13px rgba(127, 10, 123, 0.5);}
+  70% {text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5);}
+  100% {text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5);}
 }
 
 
@@ -1920,6 +1923,19 @@ html, body{
 }
 
 
+.text{
+  display: flex;
+  flex-direction: column;
+  height: 140vh;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+  padding: 40vh 5vh 1vh 5vh;
+}
+.text > *{
+  padding: 5vw;
+  text-align: center;
+}
+
 .textone h1{
   color: rgba(255, 255, 255, 0.9);
   display: flex;
@@ -1927,12 +1943,6 @@ html, body{
   justify-content: center;
   align-items: center;
   opacity: 0;
-  position: absolute;
-  top:0px;
-  right:0px;
-  bottom:0px;
-  left:0px;
-  padding: 20vw;
   line-height: 150%;
   text-shadow: 0px 0px 5px rgba(0, 242, 255, 0.7), 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
   animation-name: thankschange;
@@ -1953,12 +1963,6 @@ html, body{
   justify-content: center;
   align-items: center;
   opacity: 0;
-  position: absolute;
-  top:calc(105vh - 25vw);
-  right:0px;
-  bottom:0px;
-  left:0px;
-  padding: 20vw;
   line-height: 150%;
   text-shadow: 0px 0px 5px rgba(0, 242, 255, 0.7), 0px 0px 20px #1f003f,0px 0px 15px #1f003f;
   animation-name: thankschange;
@@ -2062,30 +2066,6 @@ html, body{
     opacity: 0.8;
   }
 }
-
-
-/* Below is the old warp. clunky and buggy if resized, some changes in the target item are required as well (obviously)
-
-@keyframes warp{
-  0%{
-    width: 100vh;
-    height: 50vh;
-    transform: translateX(-34.5vh) translateY(-16vh);
-  }
-  50%{
-    width: 59vh;
-    height: 30vh;
-    transform: translateX(-15vh) translateY(-0vh);
-  }
-  100%{
-    width: 100vh;
-    height: 50vh;
-    transform: translateX(-34.5vh) translateY(-16vh);
-  }
-}
-
-*/
-
 
 
 @keyframes sitesize{
