@@ -1853,12 +1853,11 @@ html, body{
   border-radius: 50%;
   background-image: radial-gradient(rgba(226, 0, 246, 0.3), rgba(168, 2, 219, 0.2), rgba(71, 33, 146, 0.1), rgba(60, 5, 75, 0.4), rgba(217, 1, 255, 0.2)), radial-gradient(rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at bottom, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), black 49%), radial-gradient(circle at top, rgba(246, 0, 246, 0.397), rgba(118, 2, 219, 0.247), rgba(33, 65, 146, 0.201), rgba(0, 0, 0, 0.256));
   animation: levitate 5s ease-in-out 10s infinite;
-  border-bottom: 2px ridge rgba(205, 0, 246, 0.4);
+  border-bottom: 1px ridge rgba(205, 0, 246, 0.4);
   border-left: 1px ridge rgba(55, 11, 145, 0.4);
   border-right: 1px ridge rgba(55, 11, 145, 0.4);
 }
 .ballshine{
-  overflow: hidden;
   display: flex;
   position: absolute;
   flex-shrink: 0;
@@ -1869,7 +1868,7 @@ html, body{
   height: 29vh;
   border-radius: 50%;
   background-image: radial-gradient(circle at 50% 80%, rgba(205, 0, 246, 0.628), rgba(118, 2, 219, 0.564), rgba(33, 65, 146, 0.281), black 100%), radial-gradient(circle at top, rgba(5, 0, 70, 0.5), rgba(0, 20, 87, 0.247), rgba(45, 0, 118, 0.201), rgba(0, 0, 0, 0.256)) ;
-  border-bottom: 2px ridge rgba(160, 0, 246, 0.4);
+  border-bottom: 1px ridge rgba(160, 0, 246, 0.4);
   border-left: 1px ridge rgba(246, 115, 0, 0.3);
   border-right: 1px ridge rgba(246, 115, 0, 0.3);
 }
@@ -1882,6 +1881,14 @@ html, body{
   transform-origin: top;
   transform: rotateX(40deg);
   bottom: -42vh;
+}
+.ballmask{
+  display: flex;
+  width: 29.3vh;
+  height: 29.3vh;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
 }
 .ballglow{
   scale: 0.3;
