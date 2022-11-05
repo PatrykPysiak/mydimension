@@ -1858,6 +1858,7 @@ html, body{
   border-right: 1px ridge rgba(55, 11, 145, 0.4);
 }
 .ballshine{
+  overflow: hidden;
   display: flex;
   position: absolute;
   flex-shrink: 0;
