@@ -1883,12 +1883,12 @@ html, body{
   bottom: -42vh;
 }
 .ballmask{
-  display: flex;
-  width: 29.3vh;
-  height: 29.3vh;
-  border-radius: 50%;
   position: absolute;
-  overflow: hidden;
+flex-shrink: 0;
+width: 41vh;
+height: 41vh;
+border-radius: 50%;
+background-image: radial-gradient(rgba(17, 82, 15, 0) 50%, rgb(0, 0, 0) 50%);
 }
 .ballglow{
   scale: 0.3;
