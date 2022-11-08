@@ -1,5 +1,3 @@
-
-
 html, body{
   display: flex;
   flex-direction: column;
@@ -1910,14 +1908,23 @@ background-image: radial-gradient(rgba(17, 82, 15, 0) 50%, rgb(0, 0, 0) 50%);
   width: 90vh;
   height: 90vh;
   border-radius: 50%;
-  animation: shinetwo 5s ease-in-out 10s infinite,
-  levitate 5s ease-in-out 10s infinite;
+  animation: levitate 5s ease-in-out 10s infinite;
 }
 .glowtrigger:hover ~ .ballglow{
   scale: 1.0;
 }
 .glowtrigger:hover ~ .ground{
   scale: (200% 100% 200%);
+}
+
+.linkdiv{
+  z-index: 4;
+  position: absolute;
+  flex-shrink: 0;
+  width: 90vh;
+  height: 90vh;
+  border-radius: 50%;
+  animation: levitate 5s ease-in-out 10s infinite;
 }
 
 .borderballglow{

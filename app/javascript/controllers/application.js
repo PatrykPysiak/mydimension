@@ -6,4 +6,8 @@ const application = Application.start()
 application.debug = false
 window.Stimulus   = application
 
+$(window).on('beforeunload', function() {
+  $(window).scrollTop(0);
+});
+
 export { application }
