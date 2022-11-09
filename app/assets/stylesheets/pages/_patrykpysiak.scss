@@ -2,3 +2,25 @@ html, body{
   width: 100vw;
   height: 100vh;
 }
+.patrykpysiakbody{
+  color: $font;
+  background-color: $background;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+}
+
+.work{
+  margin: 5vw;
+  text-align: center;
+}
+.work h1{
+  font-family: "Quicksand", Helvetica, sans-serif;
+}

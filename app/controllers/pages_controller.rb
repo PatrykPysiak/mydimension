@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def mydimension
     @disable_navbar = true
+    @disable_footer = true
   end
 
   def patrykpysiak

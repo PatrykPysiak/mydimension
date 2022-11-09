@@ -16,5 +16,6 @@
   <%= render "shared/flashes" %>
 
     <%= yield %>
+  <%=  render "shared/footer" unless @disable_footer == true %>
   </body>
 </html>
