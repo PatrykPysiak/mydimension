@@ -1,8 +1,6 @@
 .navbar {
 
   justify-content: space-between;
-  background: $foreground;
-  border-bottom: 1px $border solid;
-  box-shadow: 1px 1px 3px white;
+  background-image: linear-gradient($warmone,$warmtwo);
   height: 5vh;
 }

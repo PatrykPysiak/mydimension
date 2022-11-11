@@ -1,9 +1,11 @@
+
+
 html, body{
   width: 100vw;
   height: 100vh;
 }
 .patrykpysiakbody{
-  color: $font;
+  color: $coldone;
   background-color: $background;
   position: relative;
   top: 0;
@@ -17,10 +19,61 @@ html, body{
   display: flex;
 }
 
-.work{
+.mybutton{
+  z-index: 2;
+  position: absolute;
+  bottom: 4vh;
+  right: 5vw;
   margin: 5vw;
+  padding: 1vw 3vw 1vw 3vw;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px $coldtwo;
+  background-image: radial-gradient(circle at 120% 120%,$warmone,$warmtwo,$warmone);
 }
-.work h1{
+.mybutton h1{
   font-family: "Quicksand", Helvetica, sans-serif;
+  color: $warmone;
+  text-shadow: 1px 1px 1px $warmtwo,
+               -1px -1px 1px $warmtwo;
+}
+
+.page{
+--width: 70vw;
+--height: 70vh;
+
+width: var(--width);
+height: var(--height);
+border-radius: 10px;
+box-shadow: 1px 1px 5px $coldtwo;
+background-image: repeating-radial-gradient(circle at 10% 130%,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 10px,$coldone 11px,$coldtwo 22px, rgba(255, 255, 255, 0) 23px,rgba(255, 255, 255, 0) 22px),
+                  repeating-radial-gradient(circle at 90% 130%,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 10px,$coldone 11px,$coldtwo 22px,rgba(255, 255, 255, 0) 23px,rgba(255, 255, 255, 0) 22px);
+}
+.pagetextbackground{
+  padding: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: radial-gradient(circle at 120% 120%,$coldone,$coldtwo);
+  width: var(--width);
+  height: var(--height);
+  clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 30% 100%);
+  border-radius: 10px;
+}
+
+.textbox{
+  color: $background;
+  z-index: 2;
+  position: absolute;
+  flex-shrink: 0;
+  width: calc(var(--width) - 40%);
+  height: calc(var(--height) -10%);
+}
+.textbox p{
+  font-size: calc(1vw + 1vh);
+}
+.textbox h1{
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-size: calc(2vw + 2vh);
+  margin-bottom: 3vh;
 }
