@@ -4,6 +4,11 @@ html, body{
   width: 100vw;
   height: 100vh;
 }
+
+a{
+  display: block;
+}
+
 .patrykpysiakbody{
   color: $coldone;
   background-color: $background;
@@ -19,23 +24,37 @@ html, body{
   display: flex;
 }
 
-.mybutton{
+.buttondiv{
+  display: flex;
+  justify-content: space-evenly;
   z-index: 2;
   position: absolute;
   bottom: 4vh;
   right: 5vw;
   margin: 5vw;
-  padding: 1vw 3vw 1vw 3vw;
+}
+
+.mybutton{
+  border: none;
+  padding: 1vw 1vw 1vw 1vw;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px $coldtwo;
+  box-shadow: 1px 1px 5px $warmone;
   background-image: radial-gradient(circle at 120% 120%,$warmone,$warmtwo,$warmone);
-}
-.mybutton h1{
+  background-size: 100%;
+  margin: 1vw;
   font-family: "Quicksand", Helvetica, sans-serif;
   color: $warmone;
+  font-size: calc(2vw + 4vh);
   text-shadow: 1px 1px 1px $warmtwo,
                -1px -1px 1px $warmtwo;
+  transition: 0.3s ease-in-out;
+}
+.mybutton:hover{
+  background-size: 150%;
+  color: $warmtwo;
+  text-shadow: 1px 1px 1px $warmone,
+               -1px -1px 1px $warmone;
 }
 
 .page{
