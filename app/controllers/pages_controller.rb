@@ -8,4 +8,8 @@ class PagesController < ApplicationController
 
   def patrykpysiak
   end
+
+  def norsk
+  end
+
 end
