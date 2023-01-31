@@ -12,4 +12,13 @@ class PagesController < ApplicationController
   def norsk
   end
 
+  def norsksetninger
+  end
+
+  def norskadjectiv
+  end
+
+  def norsksubstantiv
+  end
+
 end

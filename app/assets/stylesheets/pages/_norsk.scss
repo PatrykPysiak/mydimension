@@ -7,7 +7,14 @@
   flex-direction:column;
 }
 
-.norsksetninger{
+strong {
+  font-weight: bold;
+  white-space: break-spaces;
+}
+
+.norskgramar{
+  margin-top: 15vh;
+  position: relative;
   display: flex;
   flex-direction:column;
 }
@@ -18,7 +25,7 @@
   display: flex;
   min-width: 5vh;
   min-height: 5vh;
-  margin: 0.5vw;
+  margin: 1vw 0.5vw 1vw 0.5vw;
   padding: 0.5vw;
   font-size: 1vw;
   border-radius: 10px;
@@ -26,6 +33,19 @@
   white-space: nowrap;
   justify-content: center;
 }
+.norskcard:hover .comment {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.norskcard:hover {
+  color: $coldtwo;
+  transition:
+  color 0.3s;
+}
+
+
+
 .norskcardcategory{
 
   color: $coldone;
@@ -105,4 +125,58 @@
   background-color: $coldtwo;
   padding: 0 0.5vw 0 0.5vw;
   border-radius: 8px;
+  white-space: break-spaces;
+}
+
+
+.navigation{
+  position: absolute;
+  top: 0vh;
+}
+
+.navigationbutton{
+    opacity: 0.7;
+    border: none;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px $warmone;
+    background-image: radial-gradient(circle at 120% 120%,$warmone,$warmtwo,$warmone);
+    background-size: 100%;
+    margin: 1vw;
+    font-family: "Quicksand", Helvetica, sans-serif;
+    color: $warmone;
+    font-size: calc(1vw + 1vh);
+    text-shadow: 1px 1px 1px $warmtwo,
+                 -1px -1px 1px $warmtwo;
+    transition: 0.3s ease-in-out;
+}
+.navigationbutton:hover{
+  opacity: 1;
+    background-size: 150%;
+    color: $warmtwo;
+    text-shadow: 1px 1px 1px $warmone,
+                 -1px -1px 1px $warmone;
+}
+.navigationbuttondark{
+  border: none;
+  padding: 2vw 4vw 2vw 4vw;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px $warmone;
+  background-image: radial-gradient(circle at 120% 120%,$warmone,$warmtwo,$warmone);
+  background-size: 190%;
+  margin: 1vw;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  color: $warmtwo;
+  font-size: calc(1.5vw + 1vh);
+  text-shadow: 1px 1px 1px $warmone,
+               -1px -1px 1px $warmone;
+  transition: 0.3s ease-in-out;
+}
+.navigationbuttondark:hover{
+  background-size: 190%;
+  color: $warmtwo;
+  text-shadow: 1px 1px 1px $warmone,
+               -1px -1px 1px $warmone;
 }
