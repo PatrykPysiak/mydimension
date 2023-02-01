@@ -1,0 +1,14 @@
+<div class="norskbody">
+  <div class="norskgramar">
+    <%= form_for [@user, @word] do |f| %>
+    <%= f.label :word %>
+    <%= f.text_field :core %>
+    <%= f.label :comment %>
+    <%= f.text_area :comment %>
+    <%= f.label :family %>
+    <%= f.select :family, ["verb","noun","other"], {include_blank: "Select something"} %>
+
+    <%= f.submit %>
+    <% end %>
+  </div>
+</div>

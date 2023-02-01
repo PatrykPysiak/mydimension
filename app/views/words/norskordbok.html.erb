@@ -1,0 +1,27 @@
+<div class="norskbody">
+
+  <div class="navigation">
+  <%= link_to "setninger", norsksetninger_path, :class=>"navigationbutton" %>
+  <%= link_to "adjectiv", norskadjectiv_path, :class=>"navigationbutton" %>
+  <%= link_to "substantiv", norsksubstantiv_path, :class=>"navigationbutton" %>
+  <%= link_to "ordbok", norskordbok_path, :class=>"navigationbuttondark" %>
+  </div>
+
+
+
+  <div class="norskgrammar">
+    <ul>
+
+      <% @words.each do |word|%>
+        <li> <%= word.core %> </li>
+      <% end  %>
+
+    </ul>
+  </div>
+
+  <div class="norsksidewindow">
+  <%= link_to "Add new word", new_user_word_path(@user, @word), :class=>"navigationbutton" %>
+  </div>
+
+
+</div>

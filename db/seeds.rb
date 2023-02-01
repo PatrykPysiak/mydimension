@@ -5,4 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-users = User.create!( email: "guest@gmail.com", password: "123456")
+
+User.destroy_all
+Word.destroy_all
+
+user = User.create!( email: "guest@gmail.com", password: "123456")
+
+Word.create!( family: "noun", core: "testword", user: user)
+Word.create!( family: "verb", core: "testwording", user: user)
