@@ -1,3 +1,14 @@
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+strong {
+  font-weight: bold;
+  white-space: break-spaces;
+}
+
 .norskbody{
   display: flex;
   min-height: 90vh;
@@ -6,12 +17,6 @@
   justify-content: center;
   flex-direction:column;
 }
-
-strong {
-  font-weight: bold;
-  white-space: break-spaces;
-}
-
 
 .norskgramar{
   margin-top: 15vh;
@@ -186,7 +191,7 @@ strong {
 .norsksidewindow{
   display: flex;
   position: fixed;
-  top: 20vh;
+  top: 5vh;
   right: 0;
   background-color: rgba($color: #024566, $alpha: 0.1);
   color: rgba($color: #000000, $alpha: 0.6);

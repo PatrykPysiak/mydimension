@@ -7,12 +7,12 @@
     <%= link_to "ordbok", norskordbok_path, :class=>"navigationbutton" %>
   </div>
 
-  <div class="norskgramar">
+  <div class="norskgramar" id="Helsetning">
 
     <div class="line">
       <div class="norskcardmaintitle">
         Helsetning
-        <span class="comment">Norwegian sentence construction</span>
+        <span class="comment">Word order in main clause sentences</span>
       </div>
     </div>
 
@@ -624,13 +624,13 @@
 
 
   </div>
-  <div class="norskgramar">
+  <div class="norskgramar" id="Leddsetning">
 
 
     <div class="line">
       <div class="norskcardmaintitle">
         Leddsetning
-        <span class="comment">Norwegian joint sentence construction</span>
+        <span class="comment">Word order in subordinate sentences</span>
       </div>
     </div>
 
@@ -868,4 +868,12 @@
 
     </div>
   </div>
+
+  <div class="norsksidewindow">
+    <div class="norskcardcategory">
+      <%= link_to "Helsetning", "#Helsetning", :class=>"navigationbutton" %>
+      <%= link_to "Leddsetning", "#Leddsetning", :class=>"navigationbutton" %>
+    </div>
+  </div>
+
 </div>
