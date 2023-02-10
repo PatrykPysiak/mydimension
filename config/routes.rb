@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/norsksetninger', to: 'pages#norsksetninger'
   get '/norskadjectiv', to: 'pages#norskadjectiv'
   get '/norsksubstantiv', to: 'pages#norsksubstantiv'
+  get '/norsktall', to: 'pages#norsktall'
 
 
  # Just a little page to list users route

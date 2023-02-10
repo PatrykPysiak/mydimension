@@ -3,9 +3,8 @@
     <%= form_for [@user, @word] do |f| %>
     <%= f.label :word %>
     <%= f.text_field :core %>
-    <%= f.label :comment %>
-    <%= f.text_area :comment %>
-    <%= f.label :family %>
+
+    <%= f.label :type %>
     <%= f.select :family, ["verb","noun","other"], {include_blank: "Select something"} %>
 
     <%= f.submit %>
