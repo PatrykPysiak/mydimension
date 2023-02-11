@@ -10,7 +10,7 @@
 
 
 
-  <div class="norskgrammar">
+  <div class="norskcolumn">
     <ul>
 
       <% @words.each do |word|%>
@@ -21,7 +21,18 @@
   </div>
 
   <div class="norsksidewindow">
-  <%= link_to "Add new word", new_user_word_path(@user, @word), :class=>"navigationbutton" %>
+    <div class="norskcardcategory">
+      <div class="norskflex">
+        <div class="norskcolumn">
+          <div class="sidewindowbutton">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </div>
+        </div>
+        <div class="norskcolumn">
+          <%= link_to "Add new word", new_user_word_path(@user, @word), :class=>"navigationbutton" %>
+        </div>
+      </div>
+    </div>
   </div>
 
 

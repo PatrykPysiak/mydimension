@@ -8,16 +8,16 @@
     <%= link_to "ordbok", norskordbok_path, :class=>"navigationbutton" %>
   </div>
 
-  <div class="norskgramar" id="Helsetning">
+  <div class="norskcolumn" id="Helsetning">
 
-    <div class="line">
+    <div class="norskline">
       <div class="norskcardmaintitle">
         Helsetning
         <span class="comment">Word order in main clause sentences</span>
       </div>
     </div>
 
-    <div class="line">
+    <div class="norskline">
       <div class="norskcardcategory">
         <div class="norskcardtitle">
           Subjekt / adverb (tid,sted,måte)
@@ -625,17 +625,17 @@
 
 
   </div>
-  <div class="norskgramar" id="Leddsetning">
+  <div class="norskcolumn" id="Leddsetning">
 
 
-    <div class="line">
+    <div class="norskline">
       <div class="norskcardmaintitle">
         Leddsetning
         <span class="comment">Word order in subordinate sentences</span>
       </div>
     </div>
 
-    <div class="line">
+    <div class="norskline">
 
       <div class="norskcardcategory">
         <div class="norskcardtitle">
@@ -872,8 +872,17 @@
 
   <div class="norsksidewindow">
     <div class="norskcardcategory">
-      <%= link_to "Helsetning", "#Helsetning", :class=>"navigationbutton" %>
-      <%= link_to "Leddsetning", "#Leddsetning", :class=>"navigationbutton" %>
+      <div class="norskflex">
+        <div class="norskcolumn">
+          <div class="sidewindowbutton">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </div>
+        </div>
+        <div class="norskcolumn">
+          <%= link_to "Helsetning", "#Helsetning", :class=>"navigationbutton" %>
+          <%= link_to "Leddsetning", "#Leddsetning", :class=>"navigationbutton" %>
+        </div>
+      </div>
     </div>
   </div>
 
