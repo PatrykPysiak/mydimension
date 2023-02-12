@@ -1,13 +1,15 @@
 <div class="norskbody">
-  <div class="norskgramar">
+  <div >
     <%= form_for [@user, @word] do |f| %>
-    <%= f.label :word %>
-    <%= f.text_field :core %>
+      <div class="norskcolumn">
+        <%= f.label :ord %>
+        <%= f.text_field :core, placeholder: "Type your new word here" %>
 
-    <%= f.label :type %>
-    <%= f.select :family, ["verb","noun","other"], {include_blank: "Select something"} %>
+        <%= f.label :type %>
+        <%= f.select :family, ["verb","noun","adjective","other"], {include_blank: "Choose type!"} %>
 
-    <%= f.submit %>
-    <% end %>
+        <%= f.submit :class=>"navigationbutton"%>
+        <% end %>
+      </div>
   </div>
 </div>

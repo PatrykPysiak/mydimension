@@ -11,13 +11,28 @@
 
 
   <div class="norskcolumn">
-    <ul>
+
 
       <% @words.each do |word|%>
-        <li> <%= word.core %> </li>
+        <div class="norskcardtitle">
+          <div class="norskcardmaintitle">
+            <%= word.core %>
+            <% translations = @translations.where(word: word.id) %>
+            <% if translations != nil && translations != "" %>
+                <span class="comment">
+                  <% translations.each do |translation|%>
+                    <%= translation.meaning %>
+                  <% end  %>
+                </span>
+            <% else %>
+            <span class="comment">missing translation</span>
+            <% end %>
+          </div>
+          - <%= word.family %>
+        </div>
       <% end  %>
 
-    </ul>
+
   </div>
 
   <div class="norsksidewindow">

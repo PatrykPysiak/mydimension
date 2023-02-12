@@ -5,6 +5,7 @@ class WordsController < ApplicationController
   def norskordbok
     @words=Word.all
     @user=current_user
+    @translations=Translation.all
   end
 
   def new
