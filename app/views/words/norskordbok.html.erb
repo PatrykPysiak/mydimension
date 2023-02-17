@@ -18,17 +18,12 @@
           <div class="norskcardmaintitle">
             <%= word.core %>
             <% translations = @translations.where(word: word.id) %>
-            <% if translations != nil && translations != "" %>
-                <span class="comment">
-                  <% translations.each do |translation|%>
-                    <%= translation.meaning %>
-                  <% end  %>
-                </span>
-            <% else %>
-            <span class="comment">missing translation</span>
-            <% end %>
+            <% unless translations.nil? || translations.empty? %>
+              <span class="comment"><ul><% translations.each do |translation|%><li><%= translation.meaning %> <% end  %></ul></span>
+            <% else %><span class="comment">missing translation!</span><% end %>
           </div>
           - <%= word.family %>
+          <%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"navigationbutton" %>
         </div>
       <% end  %>
 

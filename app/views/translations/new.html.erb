@@ -1,0 +1,12 @@
+<div class="norskbody">
+  <div >
+    <%= form_for [@word, @translation] do |f| %>
+      <div class="norskcolumn">
+        <%= f.label :translation %>
+        <%= f.text_field :meaning, placeholder: "Type in the translation here" %>
+
+        <%= f.submit :class=>"navigationbutton"%>
+        <% end %>
+      </div>
+  </div>
+</div>

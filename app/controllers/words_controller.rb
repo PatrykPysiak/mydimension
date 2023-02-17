@@ -6,6 +6,7 @@ class WordsController < ApplicationController
     @words=Word.all
     @user=current_user
     @translations=Translation.all
+    @sentences=Sentence.all
   end
 
   def new

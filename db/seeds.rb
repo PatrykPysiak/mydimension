@@ -11,11 +11,11 @@ Word.destroy_all
 
 user = User.create!( email: "guest@gmail.com", password: "123456")
 
-word = Word.create!( family: "verb", core: "test1", user: user)
-Translation.create!( meaning: "test1meaning1", word: word)
-Translation.create!( meaning: "test1meaning2", word: word)
+word = Word.create!( family: "pronoun", core: "jeg", user: user)
+Translation.create!( meaning: "I", word: word)
+#Translation.create!( meaning: "test1meaning2", word: word)
+#Sentence.create!( body: "This is a sentence with #{word}", word: word)
 
-word= Word.create!( family: "noun", core: "test2", user: user)
-Translation.create!( meaning: "test2meaning1", word: word)
-Translation.create!( meaning: "test2meaning2", word: word)
-Translation.create!( meaning: "test2meaning3", word: word)
+#word= Word.create!( family: "noun", core: "test2", user: user)
+#Translation.create!( meaning: "test2meaning1", word: word)
+#Sentence.create!( body: "This is a sentence with #{word}", word: word)

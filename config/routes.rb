@@ -20,7 +20,10 @@ Rails.application.routes.draw do
   get '/norskordbok', to: 'words#norskordbok', as: 'norskordbok'
 
   resources 'users' do
-  resources 'words', only: [:show, :new, :create]
+    resources 'words', only: [:new, :create, :edit, :update, :destroy]
+  end
+  resources 'words', only: [:index] do
+    resources 'translations', only: [:new, :create, :edit, :update, :destroy]
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
