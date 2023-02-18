@@ -9,6 +9,10 @@ strong {
   white-space: break-spaces;
 }
 
+summary{
+  display: flex;
+}
+
 .norskbody{
   display: flex;
   min-height: 90vh;
@@ -52,7 +56,7 @@ strong {
   white-space: nowrap;
   justify-content: center;
 }
-.norskcard:hover .comment {
+.norskcard:hover > .comment {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s;
@@ -90,7 +94,7 @@ strong {
   flex-grow: 1;
   justify-content: center;
 }
-.norskcardmaintitle:hover .comment {
+.norskcardmaintitle:hover > .comment {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s;
@@ -117,7 +121,7 @@ strong {
   justify-content: center;
   align-items: center;
 }
-.norskcardtitle:hover .comment {
+.norskcardtitle:hover > .comment {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s;
@@ -139,8 +143,9 @@ strong {
   text-shadow:1px 1px 5px $coldtwo;
   background-color: $coldtwo;
   padding: 0 0.5vw 0 0.5vw;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  white-space: break-spaces;
+  white-space: nowrap;
 }
 
 
@@ -222,7 +227,7 @@ $movedistance: calc(-1 * (9vw + 9vh));
 
 .sidewindowbutton{
   border: none;
-  padding: 1vw 1vw 1vw 1vw;
+  padding: 0.5vw 1vw 0.5vw 1vw;
   text-align: center;
   border-radius: 10px;
   box-shadow: 1px 1px 5px $warmone;

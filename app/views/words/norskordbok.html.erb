@@ -14,17 +14,25 @@
 
 
       <% @words.each do |word|%>
-        <div class="norskcardtitle">
-          <div class="norskcardmaintitle">
-            <%= word.core %>
-            <% translations = @translations.where(word: word.id) %>
-            <% unless translations.nil? || translations.empty? %>
-              <span class="comment"><ul><% translations.each do |translation|%><li><%= translation.meaning %> <% end  %></ul></span>
-            <% else %><span class="comment">missing translation!</span><% end %>
-          </div>
-          - <%= word.family %>
-          <%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"navigationbutton" %>
-        </div>
+          <details class="norskcardtitle">
+            <summary>
+              <div class="norskcardmaintitle">
+                <%= word.core %>
+                <% translations = @translations.where(word: word.id) %>
+                <% unless translations.nil? || translations.empty? %>
+                  <span class="comment"><ul><% translations.each do |translation|%><li><%= translation.meaning %> <% end  %></ul></span>
+                <% else %><span class="comment">missing translation!</span><% end %>
+              </div>
+              <div>
+                - <%= word.family %> <br>
+                <div class="sidewindowbutton">
+                  <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+
+                </div>
+              </div>
+            </summary>
+            <%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"navigationbutton" %>
+          </details>
       <% end  %>
 
 
