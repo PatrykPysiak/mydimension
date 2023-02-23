@@ -4,6 +4,14 @@ class CreateWords < ActiveRecord::Migration[7.0]
       t.string :family
       t.string :core
       t.text :comment
+
+      #for nouns below:
+
+      t.string :indefsing
+      t.string :defsing
+      t.string :indefplur
+      t.string :defplur
+
       t.references :user, null: false, foreign_key: true
 
       t.timestamps

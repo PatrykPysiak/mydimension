@@ -27,10 +27,19 @@ class TranslationsController < ApplicationController
     end
   end
 
+  def edit
+    @translation = Translation.find(params[:id])
+  end
+
+  def update
+    @translation = Translation.find(params[:id])
+    Translation.update(params[:meaning, :transindefsing, :transdefsing, :transindefplur, :transdefplur])
+    redirect_to norskordbok_path
+  end
+
   def destroy
     @translation = Translation.find(params[:id])
-    return unless @word.user == current_user
-    @word.destroy
+    @translation.destroy
     redirect_to norskordbok_path, status: :see_other
   end
 
@@ -38,7 +47,7 @@ class TranslationsController < ApplicationController
 
   def translation_params
 
-    params.require(:translation).permit( :meaning, :word_id)
+    params.require(:translation).permit( :meaning, :word_id, :transindefsing, :transdefsing, :transindefplur, :transdefplur)
   end
 
 end

@@ -36,6 +36,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_16_130425) do
 
   create_table "translations", force: :cascade do |t|
     t.string "meaning"
+    t.string "transindefsing"
+    t.string "transdefsing"
+    t.string "transindefplur"
+    t.string "transdefplur"
     t.bigint "word_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -58,6 +62,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_16_130425) do
     t.string "family"
     t.string "core"
     t.text "comment"
+    t.string "indefsing"
+    t.string "defsing"
+    t.string "indefplur"
+    t.string "defplur"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

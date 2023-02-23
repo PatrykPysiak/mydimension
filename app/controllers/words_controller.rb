@@ -26,6 +26,18 @@ class WordsController < ApplicationController
     end
   end
 
+  def edit
+    @user = current_user
+    @word = Word.find(params[:id])
+  end
+
+  def update
+    @word = Word.find(params[:id])
+    Word.update(word_params)
+    redirect_to norskordbok_path
+  end
+
+
   def destroy
     @word = Word.find(params[:id])
     return unless @word.user == current_user
@@ -39,7 +51,7 @@ class WordsController < ApplicationController
   def word_params
     #params.require(:core)
     #params.require(:family)
-    params.require(:word).permit( :core, :family, :comment, :sentence_id, :user_id)
+    params.require(:word).permit( :core, :family, :comment, :sentence_id, :user_id, :indefsing, :defsing, :indefplur, :defplur)
   end
 
 end

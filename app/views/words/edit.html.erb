@@ -1,0 +1,26 @@
+<div class="norskbody">
+  <div >
+    <%= form_for [@user, @word] do |f| %>
+      <div class="norskcolumn">
+        <%= f.label :ord %>
+        <%= f.text_field :core, placeholder: "Edit the word here" %>
+
+        <%= f.label :indefinite_singular %>
+        <%= f.text_field :indefsing, placeholder: "Type the word in indefinite singular form" %>
+
+        <%= f.label :definite_singular %>
+        <%= f.text_field :defsing, placeholder: "Type the word in definite singular form" %>
+
+        <%= f.label :indefinite_plural %>
+        <%= f.text_field :indefplur, placeholder: "Type the word in indefinite plural form" %>
+
+        <%= f.label :definite_plural %>
+        <%= f.text_field :defplur, placeholder: "Type the word in definite plural form" %>
+
+
+
+        <%= f.submit :class=>"navigationbutton"%>
+        <% end %>
+      </div>
+  </div>
+</div>

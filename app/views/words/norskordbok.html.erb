@@ -20,18 +20,20 @@
                 <%= word.core %>
                 <% translations = @translations.where(word: word.id) %>
                 <% unless translations.nil? || translations.empty? %>
-                  <span class="comment"><ul><% translations.each do |translation|%><li><%= translation.meaning %> <% end  %></ul></span>
-                <% else %><span class="comment">missing translation!</span><% end %>
+                  <span class="comment"><ul><% translations.each do |translation|%><li><%= translation.meaning %><%= link_to word_translation_path(word, translation), data: {turbo_method: :delete} do %><span class="smallnavigationbutton"><i class="fa fa-minus-circle" aria-hidden="true"></i></span><% end  %><% end  %></ul><%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"navigationbutton" %></span>
+                <% else %>
+                  <span class="comment">missing translation!<%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"navigationbutton" %></span>
+                <% end %>
               </div>
               <div>
                 - <%= word.family %> <br>
-                <div class="sidewindowbutton">
+                <div class="smallnavigationbutton">
                   <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 
                 </div>
               </div>
             </summary>
-            <%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"navigationbutton" %>
+            <%= link_to "Edit word", edit_user_word_path(@user, word), :class=>"navigationbutton" %>
           </details>
       <% end  %>
 
@@ -42,7 +44,7 @@
     <div class="norskcardcategory">
       <div class="norskflex">
         <div class="norskcolumn">
-          <div class="sidewindowbutton">
+          <div class="smallbutton">
             <i class="fa-solid fa-circle-chevron-left"></i>
           </div>
         </div>
