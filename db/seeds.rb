@@ -9,10 +9,16 @@
 User.destroy_all
 Word.destroy_all
 
-user = User.create!( email: "guest@gmail.com", password: "123456")
+user = User.create!( email: "guest@test.com", password: "123456")
+user = User.create!( email: "guest1@test.com", password: "123456")
+user = User.create!( email: "guest2@test.com", password: "123456")
+user = User.create!( email: "guest3@test.com", password: "123456")
+user = User.create!( email: "guest4@test.com", password: "123456")
+user = User.create!( email: "guest5@test.com", password: "123456")
 
-word = Word.create!( family: "noun", core: "bil", user: user)
-Translation.create!( meaning: "car", word: word)
+
+#word = Word.create!( family: "noun", core: "bil", user: user)
+#Translation.create!( meaning: "car", word: word)
 #Translation.create!( meaning: "test1meaning2", word: word)
 #Sentence.create!( body: "This is a sentence with #{word}", word: word)
 

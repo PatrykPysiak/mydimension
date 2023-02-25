@@ -2,21 +2,103 @@
   <div >
     <%= form_for [@user, @word] do |f| %>
       <div class="norskcolumn">
-        <%= f.label :ord %>
-        <%= f.text_field :core, placeholder: "Edit the word here" %>
+        <div class="norskcardtitle">
+          <%= f.label :ord, "Ord: " %>
+          <%= f.text_field :core, placeholder: "Edit the word here" %>
+        </div>
 
-        <%= f.label :indefinite_singular %>
-        <%= f.text_field :indefsing, placeholder: "Type the word in indefinite singular form" %>
+        <% case @word.family %>
+        <% when "noun" %>
+          <div class="norskcardtitle">
+            <%= f.label :indefinite_singular, "indefinite singular:" %>
+            <%= f.text_field :indefsing, placeholder: "Type the word in indefinite singular form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :definite_singular, "definite singular:" %>
+            <%= f.text_field :defsing, placeholder: "Type the word in definite singular form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :indefinite_plural, "indefinite plural:" %>
+            <%= f.text_field :indefplur, placeholder: "Type the word in indefinite plural form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :definite_plural, "definite plural:" %>
+            <%= f.text_field :defplur, placeholder: "Type the word in definite plural form" %>
+          </div>
 
-        <%= f.label :definite_singular %>
-        <%= f.text_field :defsing, placeholder: "Type the word in definite singular form" %>
+        <% when "adjective" %>
+          <div class="norskcardtitle">
+            <%= f.label :masfem, "masculine/feminine noun:" %>
+            <%= f.text_field :masfem, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :neuter, "neuter noun:" %>
+            <%= f.text_field :neuter, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :partic, "particular form:" %>
+            <%= f.text_field :partic, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :plur, "plural form:" %>
+            <%= f.text_field :plur, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :dcomperat, "comperative form:" %>
+            <%= f.text_field :comperat, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :supindef, "superlative (indefinite form):" %>
+            <%= f.text_field :supindef, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :supdef, "superlative (definite form):" %>
+            <%= f.text_field :supdef, placeholder: "Type in the correct form" %>
+          </div>
 
-        <%= f.label :indefinite_plural %>
-        <%= f.text_field :indefplur, placeholder: "Type the word in indefinite plural form" %>
+        <% when "verb" %>
+          <div class="norskcardtitle">
+            <%= f.label :infinit, "infinitive form:" %>
+            <%= f.text_field :infinit, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :pres, "present tense:" %>
+            <%= f.text_field :pres, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :preterit, "past tense:" %>
+            <%= f.text_field :preterit, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :presperf, "present perfect tense:" %>
+            <%= f.text_field :presperf, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :imperat, "imperative form:" %>
+            <%= f.text_field :imperat, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :perfparmasfem, "masculine or feminine perfect participle:" %>
+            <%= f.text_field :perfparmasfem, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :perfparneuter, "neuter perfect participle:" %>
+            <%= f.text_field :perfparneuter, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :perfparartic, "particular form perfect participle:" %>
+            <%= f.text_field :perfparartic, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :perfparplur, "plural form perfect participle:" %>
+            <%= f.text_field :perfparplur, placeholder: "Type in the correct form" %>
+          </div>
+          <div class="norskcardtitle">
+            <%= f.label :prespar, "present participle:" %>
+            <%= f.text_field :prespar, placeholder: "Type in the correct form" %>
+          </div>
 
-        <%= f.label :definite_plural %>
-        <%= f.text_field :defplur, placeholder: "Type the word in definite plural form" %>
-
+        <% end %>
 
 
         <%= f.submit :class=>"navigationbutton"%>

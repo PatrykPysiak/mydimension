@@ -11,7 +11,7 @@ strong {
 
 summary{
   display: flex;
-  width: 50vw;
+  width: 80vw;
 }
 
 .norskbody{
@@ -51,11 +51,12 @@ summary{
   min-height: 5vh;
   margin: 1vw 0.5vw 1vw 0.5vw;
   padding: 0.5vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
   border-radius: 10px;
-  box-shadow: 22px 0px 0.1px rgba($color: #024566, $alpha: 0.2);
+  box-shadow: 2px 2px 3px rgba($color: #024566, $alpha: 0.2);
   white-space: nowrap;
   justify-content: center;
+  flex-grow: 2;
 }
 .norskcard:hover > .comment {
   visibility: visible;
@@ -115,11 +116,11 @@ summary{
   min-height: 5vh;
   margin: 0.5vw;
   padding: 0px 1vw 0px 1vw;
-  font-size: 1.2vw;
+  font-size: 1vw;
   border-radius: 10px;
   box-shadow: 1px 1px 5px $coldtwo;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .norskcardtitle:hover > .comment {
@@ -166,7 +167,7 @@ summary{
     background-size: 100%;
     margin: 1vw;
     font-family: "Quicksand", Helvetica, sans-serif;
-    color: $warmone;
+    color: $warmonedark;
     font-size: calc(1vw + 1vh);
     text-shadow: 1px 1px 1px $warmtwo,
                  -1px -1px 1px $warmtwo;
@@ -192,7 +193,7 @@ summary{
   color: $warmtwo;
   font-size: calc(1.5vw + 1vh);
   text-shadow: 1px 1px 1px $warmone,
-               -1px -1px 1px $warmone;
+               -1px -1px 1px $warmonedark;
   transition: 0.3s ease-in-out;
 }
 .navigationbuttondark:hover{
@@ -201,6 +202,33 @@ summary{
   text-shadow: 1px 1px 1px $warmone,
                -1px -1px 1px $warmone;
 }
+
+.norskbutton{
+  opacity: 0.7;
+  border: none;
+  padding: 0.3vw 1vw 0.3vw 1vw;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px $warmone;
+  background-image: radial-gradient(circle at 120% 120%,$warmone,$warmtwo,$warmone);
+  background-size: 100%;
+  margin: 1vw;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  color: $warmonedark;
+  font-size: calc(1vw + 1vh);
+  text-shadow: 1px 1px 1px $warmtwo,
+               -1px -1px 1px $warmtwo;
+  transition: 0.3s ease-in-out;
+}
+.norskbutton:hover{
+opacity: 1;
+  background-size: 150%;
+  color: $warmtwo;
+  text-shadow: 1px 1px 1px $warmone,
+               -1px -1px 1px $warmone;
+}
+
+
 
 $movedistance: calc(-1 * (9vw + 9vh));
 
@@ -217,7 +245,7 @@ $movedistance: calc(-1 * (9vw + 9vh));
   padding-left: 0vw;
   font-size: 1vw;
   border-radius: 20px;
-  box-shadow: 22px 0px 0.1px rgba($color: #024566, $alpha: 0.2);
+  box-shadow: 2px 0px 0.1px rgba($color: #024566, $alpha: 0.2);
   white-space: nowrap;
   justify-content: center;
   transition: 500ms linear;
@@ -227,6 +255,8 @@ $movedistance: calc(-1 * (9vw + 9vh));
 }
 
 .smallbutton{
+  width: calc(1.8vw + 1.8vh);
+  height: calc(1.8vw + 1.8vh);
   border: none;
   padding: 0.2vw 0.6vw 0.2vw 0.6vw;
   text-align: center;
@@ -245,6 +275,8 @@ $movedistance: calc(-1 * (9vw + 9vh));
 
 .smallnavigationbutton{
   opacity: 0.7;
+  width: calc(1.8vw + 1.8vh);
+  height: calc(1.8vw + 1.8vh);
   border: none;
   padding: 0.2vw 0.6vw 0.2vw 0.6vw;
   text-align: center;
@@ -271,4 +303,8 @@ opacity: 1;
 
 .transparent{
   opacity: 0;
+}
+
+.setheight{
+  height: calc(7vw + 7vh);
 }

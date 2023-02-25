@@ -66,6 +66,23 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_16_130425) do
     t.string "defsing"
     t.string "indefplur"
     t.string "defplur"
+    t.string "masfem"
+    t.string "neuter"
+    t.string "partic"
+    t.string "plur"
+    t.string "comperat"
+    t.string "supindef"
+    t.string "supdef"
+    t.string "infinit"
+    t.string "pres"
+    t.string "preterit"
+    t.string "presperf"
+    t.string "imperat"
+    t.string "perfparmasfem"
+    t.string "perfparneuter"
+    t.string "perfparartic"
+    t.string "perfparplur"
+    t.string "prespar"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

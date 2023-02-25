@@ -20,12 +20,12 @@
                 <%= word.core %>
                 <% translations = @translations.where(word: word.id) %>
                 <% unless translations.nil? || translations.empty? %>
-                  <span class="comment"><ul><% translations.each do |translation|%><li><%= translation.meaning %><%= link_to word_translation_path(word, translation), data: {turbo_method: :delete} do %><span class="smallnavigationbutton"><i class="fa fa-minus-circle" aria-hidden="true"></i></span><% end  %><% end  %></ul><%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"navigationbutton" %></span>
+                  <span class="comment"><ul><% translations.each do |translation|%><li><%= translation.meaning %><%= link_to word_translation_path(word, translation), data: {turbo_method: :delete} do %><span class="smallnavigationbutton"><i class="fa fa-minus-circle" aria-hidden="true"></i></span><% end  %><% end  %></ul><%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"norskbutton" %></span>
                 <% else %>
-                  <span class="comment">missing translation!<%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"navigationbutton" %></span>
+                  <span class="comment">missing translation!<%= link_to "Add translation", new_word_translation_path(word, @translation), :class=>"norskbutton" %></span>
                 <% end %>
               </div>
-              <div>
+              <div class="norskcolumn norskflex">
                 - <%= word.family %> <br>
                 <div class="smallnavigationbutton">
                   <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
@@ -33,7 +33,93 @@
                 </div>
               </div>
             </summary>
-            <%= link_to "Edit word", edit_user_word_path(@user, word), :class=>"navigationbutton" %>
+            <% case word.family %>
+              <% when "noun" %>
+                <div>
+                  <div class="norskcardtitle">singular:</div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">indefinite:</div><div class="norskcard"><%= word.indefsing %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">definite:</div><div class="norskcard"><%= word.defsing %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskcardtitle">plural:</div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">indefinite:</div><div class="norskcard"><%= word.indefplur %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">definite:</div><div class="norskcard"><%= word.defplur %></div><div class="norskcard">example sentence</div>
+                  </div>
+                </div>
+              <% when "adjective" %>
+                <div>
+                  <div class="norskcardtitle">singular:</div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">masculine/feminine nouns:</div><div class="norskcard"><%= word.masfem %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">neuter nouns:</div><div class="norskcard"><%= word.neuter %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">particular form:</div><div class="norskcard"><%= word.partic %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskcardtitle">plural:</div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">plural form:</div><div class="norskcard"><%= word.plur %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskcardtitle">degrees:</div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">comperative form:</div><div class="norskcard"><%= word.comperat %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">superlative (indefinite form):</div><div class="norskcard"><%= word.supindef %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">superlative (definite form):</div><div class="norskcard"><%= word.supdef %></div><div class="norskcard">example sentence</div>
+                  </div>
+                </div>
+              <% when "verb" %>
+                <div>
+                  <div class="norskcardtitle">varieties:</div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">infinitive form:</div><div class="norskcard"><%= word.infinit %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">present tense:</div><div class="norskcard"><%= word.pres %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">past tense:</div><div class="norskcard"><%= word.preterit %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">present perfect tense:</div><div class="norskcard"><%= word.presperf %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">imperative form:</div><div class="norskcard"><%= word.imperat %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskcardtitle">perfect participles:</div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">masculine/feminine perfect participle:</div><div class="norskcard"><%= word.perfparmasfem %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">neuter perfect participle:</div><div class="norskcard"><%= word.perfparneuter %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">particular form perfect participle:</div><div class="norskcard"><%= word.perfparartic %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">plural form perfect participle:</div><div class="norskcard"><%= word.perfparplur %></div><div class="norskcard">example sentence</div>
+                  </div>
+                  <div class="norskcardtitle">present participle</div>
+                  <div class="norskflex">
+                    <div class="norskcardtitle">present participle:</div><div class="norskcard"><%= word.prespar %></div><div class="norskcard">example sentence</div>
+                  </div>
+                </div>
+              <% when "other" %>
+
+            <% end  %>
+
+            <%= link_to "Edit word", edit_user_word_path(@user, word), :class=>"norskbutton" %>
+
           </details>
       <% end  %>
 
@@ -49,7 +135,7 @@
           </div>
         </div>
         <div class="norskcolumn">
-          <%= link_to "Add new word", new_user_word_path(@user, @word), :class=>"navigationbutton" %>
+          <%= link_to "Add new word", new_user_word_path(@user, @word), :class=>"norskbutton" %>
         </div>
       </div>
     </div>

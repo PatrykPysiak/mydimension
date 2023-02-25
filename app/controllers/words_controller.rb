@@ -49,9 +49,11 @@ class WordsController < ApplicationController
   private
 
   def word_params
-    #params.require(:core)
-    #params.require(:family)
-    params.require(:word).permit( :core, :family, :comment, :sentence_id, :user_id, :indefsing, :defsing, :indefplur, :defplur)
+    params.require(:word).permit( :core, :family, :comment, :sentence_id, :user_id,                                                                       #general word params
+                                 :indefsing, :defsing, :indefplur, :defplur,                                                                              #noun params
+                                 :masfem, :neuter, :partic, :comperat, :supindef, :supdef,                                                                #adjective params
+                                 :infinit, :pres, :preterit, :presperf, :imperat, :perfparmasfem, :perfparneuter, :perfparartic, :perfparplur, :prespar   #verb params
+                                )
   end
 
 end

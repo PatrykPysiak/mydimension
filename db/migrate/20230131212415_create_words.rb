@@ -12,6 +12,29 @@ class CreateWords < ActiveRecord::Migration[7.0]
       t.string :indefplur
       t.string :defplur
 
+      #for adjectives below:
+
+      t.string :masfem
+      t.string :neuter
+      t.string :partic
+      t.string :plur
+      t.string :comperat
+      t.string :supindef
+      t.string :supdef
+
+      #for verbs below:
+
+      t.string :infinit
+      t.string :pres
+      t.string :preterit
+      t.string :presperf
+      t.string :imperat
+      t.string :perfparmasfem
+      t.string :perfparneuter
+      t.string :perfparartic
+      t.string :perfparplur
+      t.string :prespar
+
       t.references :user, null: false, foreign_key: true
 
       t.timestamps
